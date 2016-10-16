@@ -4,7 +4,9 @@ osx_image: xcode8
 
 before_install:
   - brew update
-  - carthage update --platform osX
+  - brew upgrade carthage || true
+  - carthage version
+  - carthage bootstrap --platform osX
 
 xcode_project: Up N Down.xcodeproj
 xcode_scheme: Up N Down
