@@ -93,9 +93,8 @@
 			children = (
 				BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */,
 				BE3A9FD21DB3DCDD0009D265 /* ViewController.swift */,
-				BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */,
 				BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */,
-				BE3A9FD91DB3DCDD0009D265 /* Info.plist */,
+				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
 			);
 			path = "Up N Down";
 			sourceTree = "<group>";
@@ -104,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */,
-				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
 				BE3A9FF71DB3DD5A0009D265 /* Supporting Files */,
 			);
 			path = "Up N Down Finder Sync Extension";
@@ -113,7 +111,17 @@
 		BE3A9FF71DB3DD5A0009D265 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
 				BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE3AA0021DB3E9C80009D265 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */,
+				BE3A9FD91DB3DCDD0009D265 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
