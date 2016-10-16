@@ -19,6 +19,7 @@ class FinderSync: FIFinderSync {
 
     private let usersDirectoryURL = URL(fileURLWithPath: "/Users/")
     fileprivate let finderController = FIFinderSyncController.default()
+    fileprivate var repository: Repository?
 
     override init() {
         super.init()
@@ -40,20 +41,77 @@ extension FinderSync {
         // The user is now seeing the container's contents.
         // If they see it in more than one view at a time, we're only told once.
         NSLog("beginObservingDirectoryAtURL: %@", url.path as NSString)
+
+        url.recursive { [weak self] url in
+            self?.repository = Repository(from: url)
+
+            return self?.repository != nil
+        }
+
     }
 
     override func requestBadgeIdentifier(for url: URL) {
         NSLog("requestBadgeIdentifierForURL: %@", url.path as NSString)
 
-        // For demonstration purposes, this picks one of our two badges, or no badge at all, based on the filename.
-        let whichBadge = abs(url.path.hash) % 3
-        let badgeIdentifier = badges[whichBadge].identifier
-        finderController.setBadgeIdentifier(badgeIdentifier, for: url)
+        // If the URL points to a directory, do nothing.
+        guard !url.hasDirectoryPath else {
+            // TODO: Check recursively files in directory.
+            return
+        }
+
+        // Retrieve status of file and set badge if necessary.
+        if let status = repository?.status(for: url) {
+            setBadgeIdentifier(for: status, forURL: url)
+
+            NSLog("Status \(status) for \(url.path)")
+        }
     }
 
     override func endObservingDirectory(at url: URL) {
         // The user is no longer seeing the container's contents.
         NSLog("endObservingDirectoryAtURL: %@", url.path as NSString)
+    }
+
+}
+
+// MARK: - Git
+
+extension FinderSync {
+
+    /// Set Badge Identifier corresponding to Git Status
+    func setBadgeIdentifier(for status: GitStatus, forURL url: URL) {
+        switch status {
+        case .addedInIndex:
+            finderController.setBadgeIdentifier(Badge.addedInIndex.identifier, for: url)
+            break
+        case .addedInWorktree:
+            finderController.setBadgeIdentifier(Badge.addedInWorktree.identifier, for: url)
+            break
+        case .deletedInIndex:
+            finderController.setBadgeIdentifier(Badge.deletedInIndex.identifier, for: url)
+            break
+        case .deletedInWorktree:
+            finderController.setBadgeIdentifier(Badge.deletedInWorktree.identifier, for: url)
+            break
+        case .modifiedInIndex:
+            finderController.setBadgeIdentifier(Badge.modifiedInIndex.identifier, for: url)
+            break
+        case .modifiedInWorktree:
+            finderController.setBadgeIdentifier(Badge.modifiedInWorktree.identifier, for: url)
+            break
+        case .renamedInIndex:
+            finderController.setBadgeIdentifier(Badge.renamedInIndex.identifier, for: url)
+            break
+        case .renamedInWorktree:
+            finderController.setBadgeIdentifier(Badge.renamedInWorktree.identifier, for: url)
+            break
+        case .ignored:
+            finderController.setBadgeIdentifier(Badge.ignored.identifier, for: url)
+            break
+        case .unmodified:
+            // Do nothing
+            break
+        }
     }
 
 }
