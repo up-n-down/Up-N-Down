@@ -14,6 +14,8 @@
 		BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */; };
 		BE3A9FFE1DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3AA0031DB3EA530009D265 /* Assets.xcassets */; };
+		BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0051DB3EC540009D265 /* Badge.swift */; };
+		BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		BE3A9FFB1DB3DD5A0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3AA0031DB3EA530009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE3AA0051DB3EC540009D265 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIFinderSyncController+Badge.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */,
+				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
+				BE3AA0051DB3EC540009D265 /* Badge.swift */,
 				BE3A9FF71DB3DD5A0009D265 /* Supporting Files */,
 			);
 			path = "Up N Down Finder Sync Extension";
@@ -244,6 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
+				BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */,
+				BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
