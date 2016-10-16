@@ -1,0 +1,15 @@
+language: objective-c
+
+osx_image: xcode8
+
+before_install:
+  - brew update
+  - brew upgrade xctool
+  - brew install carthage
+  - carthage update --platform osX
+
+xcode_project: Up N Down.xcodeproj
+xcode_scheme: Up N Down
+
+notifications:
+  email: false
