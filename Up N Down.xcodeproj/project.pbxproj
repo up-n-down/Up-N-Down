@@ -23,6 +23,7 @@
 		BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository.swift */; };
 		BE3AA0191DB3FCC80009D265 /* GitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0181DB3FCC80009D265 /* GitStatus.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
+		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,16 @@
 				BE3A9FFE1DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4BF1D71DB4173300063FE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -70,6 +81,7 @@
 		BE3AA0161DB3FBE20009D265 /* GTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRepository.swift; sourceTree = "<group>"; };
 		BE3AA0181DB3FCC80009D265 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentWindow.swift; path = "../../../../up-n-down-old/App/TransparentWindow.swift"; sourceTree = "<group>"; };
+		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +148,7 @@
 		BE3A9FF71DB3DD5A0009D265 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */,
 				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
 				BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */,
 				BE3AA0031DB3EA530009D265 /* Assets.xcassets */,
@@ -219,6 +232,7 @@
 				BE3A9FF21DB3DD5A0009D265 /* Frameworks */,
 				BE3A9FF31DB3DD5A0009D265 /* Resources */,
 				BE3AA0091DB3F3FC0009D265 /* ShellScript */,
+				BE4BF1D71DB4173300063FE7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -536,6 +550,7 @@
 				BE3A9FDE1DB3DCDD0009D265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up N Down Finder Sync Extension" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +559,7 @@
 				BE3AA0011DB3DD5A0009D265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
