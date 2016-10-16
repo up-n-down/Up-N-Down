@@ -2,11 +2,11 @@ language: objective-c
 
 osx_image: xcode8
 
-before_install:
+install:
   - brew update
   - brew upgrade carthage || true
-  - carthage version
-  - carthage bootstrap --platform osX
+
+script: carthage bootstrap --platform osX
 
 xcode_project: Up N Down.xcodeproj
 xcode_scheme: Up N Down
