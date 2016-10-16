@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */; };
-		BE3A9FD31DB3DCDD0009D265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* ViewController.swift */; };
+		BE3A9FD31DB3DCDD0009D265 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* MainViewController.swift */; };
 		BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */; };
 		BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */; };
 		BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */; };
@@ -22,6 +22,7 @@
 		BE3AA0151DB3FB690009D265 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0141DB3FB690009D265 /* Repository+Status.swift */; };
 		BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository.swift */; };
 		BE3AA0191DB3FCC80009D265 /* GitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0181DB3FCC80009D265 /* GitStatus.swift */; };
+		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,7 @@
 /* Begin PBXFileReference section */
 		BE3A9FCD1DB3DCDD0009D265 /* Up N Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up N Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3A9FD21DB3DCDD0009D265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE3A9FD21DB3DCDD0009D265 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3A9FD71DB3DCDD0009D265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3A9FD91DB3DCDD0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		BE3AA0141DB3FB690009D265 /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
 		BE3AA0161DB3FBE20009D265 /* GTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRepository.swift; sourceTree = "<group>"; };
 		BE3AA0181DB3FCC80009D265 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
+		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentWindow.swift; path = "../../../../up-n-down-old/App/TransparentWindow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */,
-				BE3A9FD21DB3DCDD0009D265 /* ViewController.swift */,
+				BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */,
+				BE3A9FD21DB3DCDD0009D265 /* MainViewController.swift */,
 				BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */,
 				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
 			);
@@ -309,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3A9FD31DB3DCDD0009D265 /* ViewController.swift in Sources */,
+				BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */,
+				BE3A9FD31DB3DCDD0009D265 /* MainViewController.swift in Sources */,
 				BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
