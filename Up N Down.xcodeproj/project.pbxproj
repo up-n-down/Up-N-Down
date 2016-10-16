@@ -13,6 +13,7 @@
 		BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */; };
 		BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */; };
 		BE3A9FFE1DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3AA0031DB3EA530009D265 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Up_N_Down_Finder_Sync_Extension.entitlements; sourceTree = "<group>"; };
 		BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		BE3A9FFB1DB3DD5A0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3AA0031DB3EA530009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
 				BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */,
+				BE3AA0031DB3EA530009D265 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
