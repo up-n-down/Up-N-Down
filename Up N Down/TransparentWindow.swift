@@ -9,6 +9,7 @@
 import Cocoa
 
 class TransparentWindow: NSWindow {
+    
     override init(contentRect: NSRect, styleMask aStyle: NSWindowStyleMask, backing bufferingType: NSBackingStoreType, defer flag: Bool) {
         super.init(contentRect: contentRect, styleMask: aStyle, backing: bufferingType, defer: flag)
 

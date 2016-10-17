@@ -255,12 +255,12 @@
 				TargetAttributes = {
 					BE3A9FCC1DB3DCDD0009D265 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4K9RW3368R;
+						DevelopmentTeam = E6HN743D3A;
 						ProvisioningStyle = Automatic;
 					};
 					BE3A9FF41DB3DD5A0009D265 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4K9RW3368R;
+						DevelopmentTeam = E6HN743D3A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -466,11 +466,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
+				DEVELOPMENT_TEAM = E6HN743D3A;
 				INFOPLIST_FILE = "Up N Down/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thomaspaulmann.Up-N-Down";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -482,10 +485,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
+				DEVELOPMENT_TEAM = E6HN743D3A;
 				INFOPLIST_FILE = "Up N Down/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thomaspaulmann.Up-N-Down";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -497,15 +501,17 @@
 				CODE_SIGN_ENTITLEMENTS = "Up N Down Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
+				DEVELOPMENT_TEAM = E6HN743D3A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Up N Down Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thomaspaulmann.Up-N-Down.Up-N-Down-Finder-Sync-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -517,14 +523,14 @@
 				CODE_SIGN_ENTITLEMENTS = "Up N Down Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
+				DEVELOPMENT_TEAM = E6HN743D3A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Up N Down Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thomaspaulmann.Up-N-Down.Up-N-Down-Finder-Sync-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
