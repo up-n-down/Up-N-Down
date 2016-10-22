@@ -25,6 +25,7 @@
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
 		BE6988D31DBBEE7000D37783 /* DirectoryMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */; };
+		BEEB3C921DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEEB3C911DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			dstSubfolderSpec = 7;
 			files = (
 				BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */,
+				BEEB3C921DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
 		BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DirectoryMonitor.framework; path = Carthage/Build/Mac/DirectoryMonitor.framework; sourceTree = "<group>"; };
+		BEEB3C911DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DirectoryMonitor.framework.dSYM; path = ../Carthage/Build/Mac/DirectoryMonitor.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 		BE3A9FF71DB3DD5A0009D265 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEEB3C911DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM */,
 				BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */,
 				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
 				BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */,
