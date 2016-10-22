@@ -109,8 +109,8 @@
 		BE3A9FC41DB3DCDD0009D265 = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FCF1DB3DCDD0009D265 /* Up N Down */,
-				BE3A9FF61DB3DD5A0009D265 /* Up N Down Finder Sync Extension */,
+				BE3A9FCF1DB3DCDD0009D265 /* App */,
+				BE3A9FF61DB3DD5A0009D265 /* Finder Sync Extension */,
 				BE3A9FCE1DB3DCDD0009D265 /* Products */,
 				BE3AA00A1DB3F4940009D265 /* Frameworks */,
 			);
@@ -125,7 +125,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE3A9FCF1DB3DCDD0009D265 /* Up N Down */ = {
+		BE3A9FCF1DB3DCDD0009D265 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */,
@@ -134,18 +134,18 @@
 				BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */,
 				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
 			);
-			path = "Up N Down";
+			path = App;
 			sourceTree = "<group>";
 		};
-		BE3A9FF61DB3DD5A0009D265 /* Up N Down Finder Sync Extension */ = {
+		BE3A9FF61DB3DD5A0009D265 /* Finder Sync Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BE3AA0111DB3F9790009D265 /* Extensions */,
-				BE3AA00D1DB3F84B0009D265 /* FinderSync */,
+				BE3AA00D1DB3F84B0009D265 /* Finder Sync */,
 				BE3AA00E1DB3F8540009D265 /* Git */,
+				BE3AA0111DB3F9790009D265 /* Extensions */,
 				BE3A9FF71DB3DD5A0009D265 /* Supporting Files */,
 			);
-			path = "Up N Down Finder Sync Extension";
+			path = "Finder Sync Extension";
 			sourceTree = "<group>";
 		};
 		BE3A9FF71DB3DD5A0009D265 /* Supporting Files */ = {
@@ -177,14 +177,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE3AA00D1DB3F84B0009D265 /* FinderSync */ = {
+		BE3AA00D1DB3F84B0009D265 /* Finder Sync */ = {
 			isa = PBXGroup;
 			children = (
 				BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */,
 				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
 				BE3AA0051DB3EC540009D265 /* Badge.swift */,
 			);
-			name = FinderSync;
+			path = "Finder Sync";
 			sourceTree = "<group>";
 		};
 		BE3AA00E1DB3F8540009D265 /* Git */ = {
@@ -194,7 +194,7 @@
 				BE3AA0141DB3FB690009D265 /* Repository+Status.swift */,
 				BE3AA0181DB3FCC80009D265 /* GitStatus.swift */,
 			);
-			name = Git;
+			path = Git;
 			sourceTree = "<group>";
 		};
 		BE3AA0111DB3F9790009D265 /* Extensions */ = {
@@ -203,7 +203,7 @@
 				BE3AA0121DB3F9820009D265 /* URL.swift */,
 				BE3AA0161DB3FBE20009D265 /* GTRepository.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +472,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
-				INFOPLIST_FILE = "Up N Down/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
@@ -491,7 +491,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
-				INFOPLIST_FILE = "Up N Down/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
@@ -503,7 +503,7 @@
 		BE3AA0001DB3DD5A0009D265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Up N Down Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -511,7 +511,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "Up N Down Finder Sync Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +525,7 @@
 		BE3AA0011DB3DD5A0009D265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Up N Down Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -533,7 +533,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "Up N Down Finder Sync Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
