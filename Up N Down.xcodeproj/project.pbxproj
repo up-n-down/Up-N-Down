@@ -24,6 +24,7 @@
 		BE3AA0191DB3FCC80009D265 /* GitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0181DB3FCC80009D265 /* GitStatus.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
+		BE6988D31DBBEE7000D37783 /* DirectoryMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		BE3AA0181DB3FCC80009D265 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
+		BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DirectoryMonitor.framework; path = Carthage/Build/Mac/DirectoryMonitor.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3AA00C1DB3F4940009D265 /* ObjectiveGit.framework in Frameworks */,
+				BE6988D31DBBEE7000D37783 /* DirectoryMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +171,7 @@
 		BE3AA00A1DB3F4940009D265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */,
 				BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */,
 			);
 			name = Frameworks;
@@ -312,6 +316,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/ObjectiveGit.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/DirectoryMonitor.framework",
 			);
 			outputPaths = (
 			);

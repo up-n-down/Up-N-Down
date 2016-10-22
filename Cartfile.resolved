@@ -1,1 +1,2 @@
+github "up-n-down/DirectoryMonitor" "0.3.1"
 github "libgit2/objective-git" "0.12.0"
