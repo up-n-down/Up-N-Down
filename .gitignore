@@ -29,9 +29,5 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
-# CocoaPods
-Pods/
-
-# Credentials
-Source/Credentials.swift
-credentials.rtf
+# Carthage
+Carthage/

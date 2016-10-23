@@ -8,6 +8,7 @@
 
 import Cocoa
 import FinderSync
+import DirectoryMonitor
 
 class FinderSync: FIFinderSync {
 
@@ -19,7 +20,21 @@ class FinderSync: FIFinderSync {
 
     private let usersDirectoryURL = URL(fileURLWithPath: "/Users/")
     fileprivate let finderController = FIFinderSyncController.default()
-    fileprivate var repository: Repository?
+    fileprivate var currentDirectoryURL: URL?
+    fileprivate var directoryMonitor: DirectoryMonitor?
+    fileprivate var repository: Repository? {
+        didSet {
+            guard let directoryURL = repository?.repository.URL else {
+                directoryMonitor?.stopMonitoring()
+                return
+            }
+
+            directoryMonitor = DirectoryMonitor(at: directoryURL)
+            directoryMonitor?.startMonitoring {
+                NSLog("Directory did change at \(directoryURL)")
+            }
+        }
+    }
 
     override init() {
         super.init()
@@ -42,12 +57,13 @@ extension FinderSync {
         // If they see it in more than one view at a time, we're only told once.
         NSLog("beginObservingDirectoryAtURL: %@", url.path as NSString)
 
+        currentDirectoryURL = url
+
         url.recursive { [weak self] url in
             self?.repository = Repository(from: url)
 
             return self?.repository != nil
         }
-
     }
 
     override func requestBadgeIdentifier(for url: URL) {
@@ -68,6 +84,8 @@ extension FinderSync {
     }
 
     override func endObservingDirectory(at url: URL) {
+        currentDirectoryURL = nil
+
         // The user is no longer seeing the container's contents.
         NSLog("endObservingDirectoryAtURL: %@", url.path as NSString)
     }

@@ -10,11 +10,6 @@ import Cocoa
 
 class MainViewController: NSViewController {
 
-    override func viewDidAppear() {
-        super.viewDidAppear()
-
-          }
-
     // MARK: Actions
 
     @IBAction func openPreferencesDidPress(_ sender: NSButton) {
