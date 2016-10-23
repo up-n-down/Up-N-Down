@@ -9,11 +9,11 @@
 import Foundation
 import ObjectiveGit
 
-struct Repository {
+struct Git {
 
     let repository: GTRepository
 
-    init?(from url: URL) {
+    init?(openRepositoryAt url: URL) {
         do {
             self.repository = try GTRepository(url: url)
 

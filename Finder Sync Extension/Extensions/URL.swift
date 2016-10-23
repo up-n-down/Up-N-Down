@@ -20,12 +20,11 @@ extension URL {
         }
     }
 
-
     /// Go recursive through URL (bottom up) and execute block.
-    func recursive(block: ((URL) -> (Bool))) {
+    func recursive(block: @escaping ((URL) -> (Bool))) {
         var recursiveURL = self
 
-        for _ in self.pathComponents {
+        self.pathComponents.forEach { _ in
             if !block(recursiveURL) {
                 recursiveURL = recursiveURL.deletingLastPathComponent()
             } else {

@@ -17,14 +17,12 @@
 		BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0051DB3EC540009D265 /* Badge.swift */; };
 		BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */; };
 		BE3AA00C1DB3F4940009D265 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */; };
-		BE3AA0101DB3F8630009D265 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA00F1DB3F8630009D265 /* Repository.swift */; };
+		BE3AA0101DB3F8630009D265 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA00F1DB3F8630009D265 /* Git.swift */; };
 		BE3AA0131DB3F9820009D265 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0121DB3F9820009D265 /* URL.swift */; };
-		BE3AA0151DB3FB690009D265 /* Repository+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0141DB3FB690009D265 /* Repository+Status.swift */; };
+		BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0141DB3FB690009D265 /* Git+Status.swift */; };
 		BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository.swift */; };
-		BE3AA0191DB3FCC80009D265 /* GitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0181DB3FCC80009D265 /* GitStatus.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
-		BE6988D31DBBEE7000D37783 /* DirectoryMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */; };
 		BEEB3C921DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEEB3C911DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM */; };
 /* End PBXBuildFile section */
 
@@ -78,14 +76,12 @@
 		BE3AA0051DB3EC540009D265 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIFinderSyncController+Badge.swift"; sourceTree = "<group>"; };
 		BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
-		BE3AA00F1DB3F8630009D265 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BE3AA00F1DB3F8630009D265 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		BE3AA0121DB3F9820009D265 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		BE3AA0141DB3FB690009D265 /* Repository+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Status.swift"; sourceTree = "<group>"; };
+		BE3AA0141DB3FB690009D265 /* Git+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Git+Status.swift"; sourceTree = "<group>"; };
 		BE3AA0161DB3FBE20009D265 /* GTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRepository.swift; sourceTree = "<group>"; };
-		BE3AA0181DB3FCC80009D265 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
-		BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DirectoryMonitor.framework; path = Carthage/Build/Mac/DirectoryMonitor.framework; sourceTree = "<group>"; };
 		BEEB3C911DBBF430001D9D2B /* DirectoryMonitor.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DirectoryMonitor.framework.dSYM; path = ../Carthage/Build/Mac/DirectoryMonitor.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +98,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3AA00C1DB3F4940009D265 /* ObjectiveGit.framework in Frameworks */,
-				BE6988D31DBBEE7000D37783 /* DirectoryMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +170,6 @@
 		BE3AA00A1DB3F4940009D265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE6988D21DBBEE7000D37783 /* DirectoryMonitor.framework */,
 				BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */,
 			);
 			name = Frameworks;
@@ -194,9 +188,8 @@
 		BE3AA00E1DB3F8540009D265 /* Git */ = {
 			isa = PBXGroup;
 			children = (
-				BE3AA00F1DB3F8630009D265 /* Repository.swift */,
-				BE3AA0141DB3FB690009D265 /* Repository+Status.swift */,
-				BE3AA0181DB3FCC80009D265 /* GitStatus.swift */,
+				BE3AA00F1DB3F8630009D265 /* Git.swift */,
+				BE3AA0141DB3FB690009D265 /* Git+Status.swift */,
 			);
 			path = Git;
 			sourceTree = "<group>";
@@ -320,7 +313,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/ObjectiveGit.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/DirectoryMonitor.framework",
 			);
 			outputPaths = (
 			);
@@ -346,13 +338,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3AA0131DB3F9820009D265 /* URL.swift in Sources */,
-				BE3AA0151DB3FB690009D265 /* Repository+Status.swift in Sources */,
-				BE3AA0191DB3FCC80009D265 /* GitStatus.swift in Sources */,
+				BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */,
 				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
 				BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */,
 				BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */,
 				BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */,
-				BE3AA0101DB3F8630009D265 /* Repository.swift in Sources */,
+				BE3AA0101DB3F8630009D265 /* Git.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +467,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -495,6 +490,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -517,7 +516,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.up-n-down-finder-sync-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -539,7 +538,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.Up-N-Down-Finder-Sync-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.up-n-down-finder-sync-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

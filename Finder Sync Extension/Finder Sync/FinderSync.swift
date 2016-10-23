@@ -8,7 +8,6 @@
 
 import Cocoa
 import FinderSync
-import DirectoryMonitor
 
 class FinderSync: FIFinderSync {
 
@@ -18,29 +17,16 @@ class FinderSync: FIFinderSync {
         .addedInWorktree, .deletedInWorktree, .modifiedInWorktree, .renamedInWorktree
     ]
 
-    private let usersDirectoryURL = URL(fileURLWithPath: "/Users/")
-    fileprivate let finderController = FIFinderSyncController.default()
-    fileprivate var currentDirectoryURL: URL?
-    fileprivate var directoryMonitor: DirectoryMonitor?
-    fileprivate var repository: Repository? {
-        didSet {
-            guard let directoryURL = repository?.repository.URL else {
-                directoryMonitor?.stopMonitoring()
-                return
-            }
+    private let directoryURL = URL(fileURLWithPath: "/")
 
-            directoryMonitor = DirectoryMonitor(at: directoryURL)
-            directoryMonitor?.startMonitoring {
-                NSLog("Directory did change at \(directoryURL)")
-            }
-        }
-    }
+    fileprivate let finderController = FIFinderSyncController.default()
+    fileprivate var git: Git?
 
     override init() {
         super.init()
 
         // Set up the directory we are syncing.
-        finderController.directoryURLs = [usersDirectoryURL]
+        finderController.directoryURLs = [directoryURL]
 
         // Set up images for our badge identifiers.
         badges.forEach { finderController.register(badge: $0) }
@@ -55,19 +41,21 @@ extension FinderSync {
     override func beginObservingDirectory(at url: URL) {
         // The user is now seeing the container's contents.
         // If they see it in more than one view at a time, we're only told once.
-        NSLog("beginObservingDirectoryAtURL: %@", url.path as NSString)
-
-        currentDirectoryURL = url
+        NSLog("Begin observing directory at \(url.path)")
 
         url.recursive { [weak self] url in
-            self?.repository = Repository(from: url)
+            self?.git = Git(openRepositoryAt: url)
 
-            return self?.repository != nil
+            return self?.git != nil
         }
     }
 
     override func requestBadgeIdentifier(for url: URL) {
-        NSLog("requestBadgeIdentifierForURL: %@", url.path as NSString)
+        NSLog("Request badge identifier for \(url.path)")
+
+        guard let git = git else {
+            return
+        }
 
         // If the URL points to a directory, do nothing.
         guard !url.hasDirectoryPath else {
@@ -76,7 +64,7 @@ extension FinderSync {
         }
 
         // Retrieve status of file and set badge if necessary.
-        if let status = repository?.status(for: url) {
+        if let status = git.status(for: url) {
             setBadgeIdentifier(for: status, forURL: url)
 
             NSLog("Status \(status) for \(url.path)")
@@ -84,10 +72,8 @@ extension FinderSync {
     }
 
     override func endObservingDirectory(at url: URL) {
-        currentDirectoryURL = nil
-
         // The user is no longer seeing the container's contents.
-        NSLog("endObservingDirectoryAtURL: %@", url.path as NSString)
+        NSLog("End observing directory at \(url.path)")
     }
 
 }
@@ -131,6 +117,6 @@ extension FinderSync {
             break
         }
     }
-
+    
 }
 
