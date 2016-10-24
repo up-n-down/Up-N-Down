@@ -9,19 +9,16 @@
 import Foundation
 import ObjectiveGit
 
-struct Git {
+class Git {
 
-    let repository: GTRepository
+    // MARK: - Properties
 
-    init?(openRepositoryAt url: URL) {
-        do {
-            self.repository = try GTRepository(url: url)
+    var repository: GTRepository?
 
-            NSLog("Open repository @ \(url)")
-        } catch _ {
-            NSLog("Unable to open repository @ \(url)")
-            return nil
-        }
+    // MARK: - Repository
+
+    func openRepository(at url: URL) throws {
+        self.repository = try GTRepository(url: url)
     }
     
 }

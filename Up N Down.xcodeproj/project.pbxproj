@@ -20,7 +20,7 @@
 		BE3AA0101DB3F8630009D265 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA00F1DB3F8630009D265 /* Git.swift */; };
 		BE3AA0131DB3F9820009D265 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0121DB3F9820009D265 /* URL.swift */; };
 		BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0141DB3FB690009D265 /* Git+Status.swift */; };
-		BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository.swift */; };
+		BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
 /* End PBXBuildFile section */
@@ -77,7 +77,7 @@
 		BE3AA00F1DB3F8630009D265 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		BE3AA0121DB3F9820009D265 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		BE3AA0141DB3FB690009D265 /* Git+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Git+Status.swift"; sourceTree = "<group>"; };
-		BE3AA0161DB3FBE20009D265 /* GTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRepository.swift; sourceTree = "<group>"; };
+		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */,
-				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
 				BE3AA0051DB3EC540009D265 /* Badge.swift */,
 			);
 			path = "Finder Sync";
@@ -193,8 +192,9 @@
 		BE3AA0111DB3F9790009D265 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
+				BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */,
 				BE3AA0121DB3F9820009D265 /* URL.swift */,
-				BE3AA0161DB3FBE20009D265 /* GTRepository.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
 				BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */,
 				BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */,
-				BE3AA0171DB3FBE20009D265 /* GTRepository.swift in Sources */,
+				BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */,
 				BE3AA0101DB3F8630009D265 /* Git.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class FinderSync: FIFinderSync {
     private let directoryURL = URL(fileURLWithPath: "/")
 
     fileprivate let finderController = FIFinderSyncController.default()
-    fileprivate var git: Git?
+    fileprivate let git = Git()
 
     override init() {
         super.init()
@@ -44,18 +44,17 @@ extension FinderSync {
         NSLog("Begin observing directory at \(url.path)")
 
         url.recursive { [weak self] url in
-            self?.git = Git(openRepositoryAt: url)
-
-            return self?.git != nil
+            do {
+                try self?.git.openRepository(at: url)
+                return true
+            } catch _ {
+                return false
+            }
         }
     }
 
     override func requestBadgeIdentifier(for url: URL) {
         NSLog("Request badge identifier for \(url.path)")
-
-        guard let git = git else {
-            return
-        }
 
         // If the URL points to a directory, do nothing.
         guard !url.hasDirectoryPath else {
