@@ -23,6 +23,8 @@
 		BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
+		BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */; };
+		BEED61A41DBE964300861DB8 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
+		BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		BEED61A31DBE964300861DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnBoarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */,
 				BE3A9FD21DB3DCDD0009D265 /* MainViewController.swift */,
 				BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */,
+				BEED61A51DBE96AD00861DB8 /* OnBoarding */,
 				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
 			);
 			path = App;
@@ -197,6 +202,15 @@
 				BE3AA0121DB3F9820009D265 /* URL.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEED61A51DBE96AD00861DB8 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */,
+				BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */,
+			);
+			name = OnBoarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,7 @@
 			files = (
 				BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */,
 				BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */,
+				BEED61A41DBE964300861DB8 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +341,7 @@
 				BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */,
 				BE3A9FD31DB3DCDD0009D265 /* MainViewController.swift in Sources */,
 				BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */,
+				BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +376,14 @@
 				BE3A9FD71DB3DCDD0009D265 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEED61A31DBE964300861DB8 /* Base */,
+			);
+			name = OnBoarding.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
