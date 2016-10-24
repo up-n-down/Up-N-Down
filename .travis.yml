@@ -6,10 +6,8 @@ install:
   - brew update
   - brew upgrade carthage || true
 
-script: carthage bootstrap --platform osX
-
-xcode_project: Up N Down.xcodeproj
-xcode_scheme: Up N Down
+script: 
+  - carthage bootstrap --platform osX
 
 notifications:
   email: false
