@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/up-n-down/Up-N-Down.svg?branch=master)](https://travis-ci.org/up-n-down/Up-N-Down)
+[![Swift](https://img.shields.io/badge/Swift-3.0-lightgray.svg)](https://swift.org)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+
+
 # Up-N-Down
 
 The first truly integrated Git client in macOS. We're working under high pressure to achieve our first release. Stay tuned ✌️
