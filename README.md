@@ -9,6 +9,7 @@ Special thanks to the following projects:
 
 - [Carthage](https://github.com/Carthage/Carthage) for the simple, decentralized dependency management.
 - [ObjectiveGit](https://github.com/libgit2/objective-git) for your bindings to libgit2.
+- [GitHub](https://octicons.github.com) for their awesome Octicons.
 
 ## License
 
