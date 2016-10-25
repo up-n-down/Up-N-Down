@@ -11,6 +11,7 @@ import ObjectiveGit
 
 extension GTRepository {
 
+    /// Returns the root of the repository.
     var URL: URL? {
         return self.gitDirectoryURL?.deletingLastPathComponent()
     }

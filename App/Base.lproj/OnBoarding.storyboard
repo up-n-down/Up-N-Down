@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="VN5-Fx-ilW">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding-->
+        <scene sceneID="07n-Zv-VFR">
+            <objects>
+                <viewController title="On Boarding" showSeguePresentationStyle="single" id="VN5-Fx-ilW" customClass="OnBoardingViewController" customModule="Up_N_Down" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="RIU-K7-bXN">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbt-qE-V29">
+                                <rect key="frame" x="20" y="20" width="410" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ScreenshotModifiedInIndex" id="6S4-mm-Prk"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="QP9-EW-d9c" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="655"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ScreenshotModifiedInIndex" width="1764" height="1096"/>
+    </resources>
+</document>
