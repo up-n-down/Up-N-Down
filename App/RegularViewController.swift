@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class RegularViewController: NSViewController {
 
     // MARK: Actions
 
