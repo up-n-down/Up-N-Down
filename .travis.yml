@@ -8,7 +8,7 @@ install:
 
 script:
   - carthage bootstrap --platform osX
-  - xcodebuild -project Up-N-Down.xcodeproj -target Up-N-Down -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -project Up-N-Down.xcodeproj -target Up-N-Down -sdk macosx10.12
 
 notifications:
   email: false
