@@ -6,8 +6,9 @@ install:
   - brew update
   - brew upgrade carthage || true
 
-script: 
+script:
   - carthage bootstrap --platform osX
+  - xcodebuild -project Up-N-Down.xcodeproj -target Up-N-Down -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: false

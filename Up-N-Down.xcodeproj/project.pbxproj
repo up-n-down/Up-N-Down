@@ -12,7 +12,7 @@
 		BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */; };
 		BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */; };
 		BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */; };
-		BE3A9FFE1DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE3A9FFE1DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3AA0031DB3EA530009D265 /* Assets.xcassets */; };
 		BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0051DB3EC540009D265 /* Badge.swift */; };
 		BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */; };
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BE3A9FFE1DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex in Embed App Extensions */,
+				BE3A9FFE1DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,13 +64,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE3A9FCD1DB3DCDD0009D265 /* Up N Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up N Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
 		BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3A9FD71DB3DCDD0009D265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3A9FD91DB3DCDD0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up N Down Finder Sync Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up-N-Down Finder Sync Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Up_N_Down_Finder_Sync_Extension.entitlements; sourceTree = "<group>"; };
 		BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		BE3A9FFB1DB3DD5A0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		BE3A9FCE1DB3DCDD0009D265 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FCD1DB3DCDD0009D265 /* Up N Down.app */,
-				BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */,
+				BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */,
+				BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE3A9FCC1DB3DCDD0009D265 /* Up N Down */ = {
+		BE3A9FCC1DB3DCDD0009D265 /* Up-N-Down */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up N Down" */;
+			buildConfigurationList = BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down" */;
 			buildPhases = (
 				BE3A9FC91DB3DCDD0009D265 /* Sources */,
 				BE3A9FCA1DB3DCDD0009D265 /* Frameworks */,
@@ -244,14 +244,14 @@
 			dependencies = (
 				BE3A9FFD1DB3DD5A0009D265 /* PBXTargetDependency */,
 			);
-			name = "Up N Down";
+			name = "Up-N-Down";
 			productName = "Up N Down";
-			productReference = BE3A9FCD1DB3DCDD0009D265 /* Up N Down.app */;
+			productReference = BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE3A9FF41DB3DD5A0009D265 /* Up N Down Finder Sync Extension */ = {
+		BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up N Down Finder Sync Extension" */;
+			buildConfigurationList = BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */;
 			buildPhases = (
 				BE3A9FF11DB3DD5A0009D265 /* Sources */,
 				BE3A9FF21DB3DD5A0009D265 /* Frameworks */,
@@ -263,9 +263,9 @@
 			);
 			dependencies = (
 			);
-			name = "Up N Down Finder Sync Extension";
+			name = "Up-N-Down Finder Sync Extension";
 			productName = "Up N Down Finder Sync Extension";
-			productReference = BE3A9FF51DB3DD5A0009D265 /* Up N Down Finder Sync Extension.appex */;
+			productReference = BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +290,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up N Down" */;
+			buildConfigurationList = BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up-N-Down" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -303,8 +303,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE3A9FCC1DB3DCDD0009D265 /* Up N Down */,
-				BE3A9FF41DB3DD5A0009D265 /* Up N Down Finder Sync Extension */,
+				BE3A9FCC1DB3DCDD0009D265 /* Up-N-Down */,
+				BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -380,7 +380,7 @@
 /* Begin PBXTargetDependency section */
 		BE3A9FFD1DB3DD5A0009D265 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BE3A9FF41DB3DD5A0009D265 /* Up N Down Finder Sync Extension */;
+			target = BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */;
 			targetProxy = BE3A9FFC1DB3DD5A0009D265 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -592,7 +592,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up N Down" */ = {
+		BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up-N-Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE3A9FDA1DB3DCDD0009D265 /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up N Down" */ = {
+		BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE3A9FDD1DB3DCDD0009D265 /* Debug */,
@@ -610,7 +610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up N Down Finder Sync Extension" */ = {
+		BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE3AA0001DB3DD5A0009D265 /* Debug */,
