@@ -11,6 +11,8 @@ import FinderSync
 
 class FinderSync: FIFinderSync {
 
+    // MARK: - Properties
+
     fileprivate let badges: [Badge] = [
         .ignored,
         .addedInIndex, .deletedInIndex, .modifiedInIndex, .renamedInIndex,
@@ -22,6 +24,8 @@ class FinderSync: FIFinderSync {
     fileprivate let finderController = FIFinderSyncController.default()
     fileprivate let git = Git()
 
+    // MARK: - Initializer
+
     override init() {
         super.init()
 
@@ -30,6 +34,17 @@ class FinderSync: FIFinderSync {
 
         // Set up images for our badge identifiers.
         badges.forEach { finderController.register(badge: $0) }
+    }
+
+    // MARK: - Menu
+
+    override func menu(for menu: FIMenuKind) -> NSMenu? {
+        switch menu {
+        case .toolbarItemMenu:
+            return createToolbarMenu()
+        default:
+            return nil
+        }
     }
 
 }
@@ -91,6 +106,25 @@ extension FinderSync {
 
     override var toolbarItemToolTip: String {
         return "Perform tasks in you GIT Repository"
+    }
+
+    func createToolbarMenu() -> NSMenu {
+        let toolbarMenu = NSMenu(title: "Toolbar menu")
+        let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(menuItem:)))
+
+        toolbarMenu.addItem(createRepositoryMenuItem)
+
+        return toolbarMenu
+    }
+
+    @IBAction func createRepositoryDidPress(menuItem: NSMenuItem) {
+        if let url = finderController.targetedURL(), url.hasDirectoryPath {
+            do {
+                try git.createRepository(at: url)
+            } catch let error {
+                NSLog("⚠️ Error \(error)")
+            }
+        }
     }
 
 }

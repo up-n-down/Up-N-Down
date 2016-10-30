@@ -20,6 +20,10 @@ class Git {
     func openRepository(at url: URL) throws {
         self.repository = try GTRepository(url: url)
     }
-    
+
+    func createRepository(at url: URL) throws {
+        repository = try GTRepository.initializeEmpty(atFileURL: url, options: nil)
+    }
+
 }
 

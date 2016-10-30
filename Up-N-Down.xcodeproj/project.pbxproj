@@ -23,6 +23,7 @@
 		BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */; };
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
+		BECB06E61DC62F8400753CF3 /* NSMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */; };
 		BEE9E63D1DC12A2E00D3CA2B /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */; };
 		BEE9E6401DC1301400D3CA2B /* Regular.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE9E63E1DC1301400D3CA2B /* Regular.storyboard */; };
 		BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */; };
@@ -84,6 +85,7 @@
 		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
+		BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
 		BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
 		BEE9E63F1DC1301400D3CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Regular.storyboard; sourceTree = "<group>"; };
 		BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
 				BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */,
 				BE3AA0121DB3F9820009D265 /* URL.swift */,
+				BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Thomas Paul Mann";
 				TargetAttributes = {
 					BE3A9FCC1DB3DCDD0009D265 = {
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECB06E61DC62F8400753CF3 /* NSMenuItem.swift in Sources */,
 				BE3AA0131DB3F9820009D265 /* URL.swift in Sources */,
 				BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */,
 				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
@@ -431,6 +435,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -480,6 +485,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
