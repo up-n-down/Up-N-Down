@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/up-n-down/Up-N-Down.svg?branch=master)](https://travis-ci.org/up-n-down/Up-N-Down)
-[![Swift](https://img.shields.io/badge/swift-3.0-lightgray.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-3-lightgray.svg)](https://swift.org)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 
 # Up-N-Down
