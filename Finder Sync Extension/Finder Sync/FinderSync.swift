@@ -77,6 +77,24 @@ extension FinderSync {
 
 }
 
+// MARK: - Toolbar 
+
+extension FinderSync {
+
+    override var toolbarItemName: String {
+        return "Up-N-Down"
+    }
+
+    override var toolbarItemImage: NSImage {
+        return NSImage(named: "Repository")!
+    }
+
+    override var toolbarItemToolTip: String {
+        return "Perform tasks in you GIT Repository"
+    }
+
+}
+
 // MARK: - Git
 
 extension FinderSync {
