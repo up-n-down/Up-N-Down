@@ -11,6 +11,8 @@ import Foundation
 @objc(GitServiceProtocol)
 protocol GitServiceProtocol {
 
-    func createRepository(at url: URL, errorHandler: ((Error) -> (Void)))
+    typealias ErrorHandler =  ((Error) -> (Void))
+
+    func createRepository(at url: URL, errorHandler: ErrorHandler)
 
 }

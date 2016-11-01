@@ -19,7 +19,7 @@ class RegularViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
 
-        let url = URL(fileURLWithPath: "~/Desktop/Test")
+        let url = URL(fileURLWithPath: "/Users/Mann/Desktop/Test")
         gitService.createRepository(at: url)
     }
 

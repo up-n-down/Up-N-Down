@@ -12,7 +12,7 @@ class GitService {
 
     private static let name = "io.up-n-down.up-n-down-git-service"
 
-    private let errorHandler: ((Error) -> (Void)) = { error in
+    private let errorHandler: GitServiceProtocol.ErrorHandler = { error in
         print("remote proxy error: \(error)")
     }
 
