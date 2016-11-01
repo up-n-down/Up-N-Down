@@ -59,7 +59,7 @@ extension GitStatus {
 extension Git {
 
     /// Returns the file status flags for the file at the path.
-    private func statusFlags(for file: URL) -> GTFileStatusFlags? {
+    fileprivate func statusFlags(for file: URL) -> GTFileStatusFlags? {
         guard
             let repository = repository,
             let repoURL = repository.URL,

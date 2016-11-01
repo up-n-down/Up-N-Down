@@ -21,7 +21,7 @@ extension URL {
     }
 
     /// Go recursive through URL (bottom up) and execute block.
-    func recursive(block: @escaping ((URL) -> (Bool))) {
+    func recursive(_ block: @escaping ((URL) -> (Bool))) {
         var recursiveURL = self
 
         self.pathComponents.forEach { _ in

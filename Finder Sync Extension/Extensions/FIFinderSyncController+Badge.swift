@@ -11,7 +11,7 @@ import FinderSync
 extension FIFinderSyncController {
 
     /// Register the badge for further usage.
-    func register(badge: Badge) {
+    func register(_ badge: Badge) {
         self.setBadgeImage(badge.image, label: badge.identifier, forBadgeIdentifier: badge.identifier)
     }
 

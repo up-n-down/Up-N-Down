@@ -19,7 +19,7 @@ class FinderSync: FIFinderSync {
         .addedInWorktree, .deletedInWorktree, .modifiedInWorktree, .renamedInWorktree
     ]
 
-    private let directoryURL = URL(fileURLWithPath: "/")
+    fileprivate let directoryURL = URL(fileURLWithPath: "/")
 
     fileprivate let finderController = FIFinderSyncController.default()
     fileprivate let git = Git()
@@ -33,7 +33,7 @@ class FinderSync: FIFinderSync {
         finderController.directoryURLs = [directoryURL]
 
         // Set up images for our badge identifiers.
-        badges.forEach { finderController.register(badge: $0) }
+        badges.forEach { finderController.register($0) }
     }
 
     // MARK: - Menu
@@ -110,14 +110,14 @@ extension FinderSync {
 
     func createToolbarMenu() -> NSMenu {
         let toolbarMenu = NSMenu(title: "Toolbar menu")
-        let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(menuItem:)))
+//        let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(menuItem:)))
 
-        toolbarMenu.addItem(createRepositoryMenuItem)
+//        toolbarMenu.addItem(createRepositoryMenuItem)
 
         return toolbarMenu
     }
 
-    @IBAction func createRepositoryDidPress(menuItem: NSMenuItem) {
+    @IBAction func createRepositoryDidPress(_ menuItem: NSMenuItem) {
         if let url = finderController.targetedURL(), url.hasDirectoryPath {
             do {
                 try git.createRepository(at: url)

@@ -10,6 +10,19 @@ import Cocoa
 
 class RegularViewController: NSViewController {
 
+    // MARK: - Properties
+
+    private let gitService = GitService()
+
+    // MARK: - Lifecycle
+
+    override func viewDidAppear() {
+        super.viewDidAppear()
+
+        let url = URL(fileURLWithPath: "~/Desktop/Test")
+        gitService.createRepository(at: url)
+    }
+
     // MARK: Actions
 
     @IBAction func openPreferencesDidPress(_ sender: NSButton) {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE089E2E1DC9016A0019A090 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54ABE1DC8FE8100FE7B98 /* main.swift */; };
+		BE089E2F1DC9016F0019A090 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D6CD41DC900F1001C0255 /* Git.swift */; };
+		BE089E311DC9019B0019A090 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE089E301DC9019A0019A090 /* GitService.swift */; };
 		BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */; };
 		BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */; };
 		BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */; };
@@ -24,6 +27,10 @@
 		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
 		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
 		BECB06E61DC62F8400753CF3 /* NSMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */; };
+		BED54AB71DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BED54AC21DC8FE9900FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
+		BED54AC31DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
+		BED54AC41DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
 		BEE9E63D1DC12A2E00D3CA2B /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */; };
 		BEE9E6401DC1301400D3CA2B /* Regular.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE9E63E1DC1301400D3CA2B /* Regular.storyboard */; };
 		BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */; };
@@ -37,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BE3A9FF41DB3DD5A0009D265;
 			remoteInfo = "Up N Down Finder Sync Extension";
+		};
+		BED54AB51DC8FD7500FE7B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3A9FC51DB3DCDD0009D265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED54AAB1DC8FD7500FE7B98;
+			remoteInfo = "Up-N-Down Git Service";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,9 +76,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BED54ABB1DC8FD7500FE7B98 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				BED54AB71DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE089E301DC9019A0019A090 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
+		BE089E321DC904990019A090 /* Up-N-Down.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Up-N-Down.entitlements"; path = "../Up-N-Down.entitlements"; sourceTree = "<group>"; };
 		BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +112,13 @@
 		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
+		BE4D6CD41DC900F1001C0255 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
+		BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Up-N-Down Git Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED54AB41DC8FD7500FE7B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED54ABD1DC8FDA600FE7B98 /* Up-N-Down Git Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Up-N-Down Git Service.entitlements"; sourceTree = "<group>"; };
+		BED54ABE1DC8FE8100FE7B98 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitServiceProtocol.swift; path = Shared/GitServiceProtocol.swift; sourceTree = "<group>"; };
 		BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
 		BEE9E63F1DC1301400D3CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Regular.storyboard; sourceTree = "<group>"; };
 		BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +141,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BED54AA91DC8FD7500FE7B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +156,8 @@
 			children = (
 				BE3A9FCF1DB3DCDD0009D265 /* App */,
 				BE3A9FF61DB3DD5A0009D265 /* Finder Sync Extension */,
+				BED54AAD1DC8FD7500FE7B98 /* Git Service */,
+				BED54AC01DC8FE8A00FE7B98 /* Shared */,
 				BE3A9FCE1DB3DCDD0009D265 /* Products */,
 				BE3AA00A1DB3F4940009D265 /* Frameworks */,
 			);
@@ -126,6 +168,7 @@
 			children = (
 				BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */,
 				BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */,
+				BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +183,7 @@
 				BEED61A51DBE96AD00861DB8 /* OnBoarding */,
 				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
 				BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */,
+				BE089E301DC9019A0019A090 /* GitService.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -169,6 +213,7 @@
 		BE3AA0021DB3E9C80009D265 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE089E321DC904990019A090 /* Up-N-Down.entitlements */,
 				BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */,
 				BE3A9FD91DB3DCDD0009D265 /* Info.plist */,
 			);
@@ -212,6 +257,33 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BED54AAD1DC8FD7500FE7B98 /* Git Service */ = {
+			isa = PBXGroup;
+			children = (
+				BED54ABE1DC8FE8100FE7B98 /* main.swift */,
+				BE4D6CD41DC900F1001C0255 /* Git.swift */,
+				BED54ABC1DC8FD9C00FE7B98 /* Supporting Files */,
+			);
+			path = "Git Service";
+			sourceTree = "<group>";
+		};
+		BED54ABC1DC8FD9C00FE7B98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BED54AB41DC8FD7500FE7B98 /* Info.plist */,
+				BED54ABD1DC8FDA600FE7B98 /* Up-N-Down Git Service.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BED54AC01DC8FE8A00FE7B98 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		BEE9E6411DC1302D00D3CA2B /* Regular */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,11 +313,13 @@
 				BE3A9FCA1DB3DCDD0009D265 /* Frameworks */,
 				BE3A9FCB1DB3DCDD0009D265 /* Resources */,
 				BE3A9FF01DB3DCF80009D265 /* Embed App Extensions */,
+				BED54ABB1DC8FD7500FE7B98 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BE3A9FFD1DB3DD5A0009D265 /* PBXTargetDependency */,
+				BED54AB61DC8FD7500FE7B98 /* PBXTargetDependency */,
 			);
 			name = "Up-N-Down";
 			productName = "Up N Down";
@@ -271,6 +345,23 @@
 			productReference = BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED54ABA1DC8FD7500FE7B98 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */;
+			buildPhases = (
+				BED54AA81DC8FD7500FE7B98 /* Sources */,
+				BED54AA91DC8FD7500FE7B98 /* Frameworks */,
+				BED54AAA1DC8FD7500FE7B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Up-N-Down Git Service";
+			productName = "Up-N-Down Git Service";
+			productReference = BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,12 +375,30 @@
 					BE3A9FCC1DB3DCDD0009D265 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = E6HN743D3A;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					BE3A9FF41DB3DD5A0009D265 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = E6HN743D3A;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+					};
+					BED54AAB1DC8FD7500FE7B98 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E6HN743D3A;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -308,6 +417,7 @@
 			targets = (
 				BE3A9FCC1DB3DCDD0009D265 /* Up-N-Down */,
 				BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */,
+				BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */,
 			);
 		};
 /* End PBXProject section */
@@ -329,6 +439,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED54AAA1DC8FD7500FE7B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +475,9 @@
 			files = (
 				BEE9E63D1DC12A2E00D3CA2B /* NSColor+Theme.swift in Sources */,
 				BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */,
+				BED54AC21DC8FE9900FE7B98 /* GitServiceProtocol.swift in Sources */,
 				BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */,
+				BE089E311DC9019B0019A090 /* GitService.swift in Sources */,
 				BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */,
 				BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */,
 			);
@@ -374,8 +493,19 @@
 				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
 				BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */,
 				BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */,
+				BED54AC31DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
 				BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */,
 				BE3AA0101DB3F8630009D265 /* Git.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED54AA81DC8FD7500FE7B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE089E2E1DC9016A0019A090 /* main.swift in Sources */,
+				BED54AC41DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
+				BE089E2F1DC9016F0019A090 /* Git.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +516,11 @@
 			isa = PBXTargetDependency;
 			target = BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */;
 			targetProxy = BE3A9FFC1DB3DD5A0009D265 /* PBXContainerItemProxy */;
+		};
+		BED54AB61DC8FD7500FE7B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */;
+			targetProxy = BED54AB51DC8FD7500FE7B98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +649,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Up-N-Down.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -537,6 +673,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Up-N-Down.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -566,7 +703,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.up-n-down-finder-sync-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-finder-sync-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -588,7 +725,41 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down.up-n-down-finder-sync-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-finder-sync-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BED54AB81DC8FD7500FE7B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Git Service/Up-N-Down Git Service.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E6HN743D3A;
+				INFOPLIST_FILE = "$(SRCROOT)/Git Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-git-service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BED54AB91DC8FD7500FE7B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Git Service/Up-N-Down Git Service.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Git Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-git-service";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -621,6 +792,15 @@
 			buildConfigurations = (
 				BE3AA0001DB3DD5A0009D265 /* Debug */,
 				BE3AA0011DB3DD5A0009D265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED54ABA1DC8FD7500FE7B98 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED54AB81DC8FD7500FE7B98 /* Debug */,
+				BED54AB91DC8FD7500FE7B98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
