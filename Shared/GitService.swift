@@ -13,7 +13,7 @@ class GitService {
     private static let name = "io.up-n-down.up-n-down-git-service"
 
     private let errorHandler: GitServiceProtocol.ErrorHandler = { error in
-        print("remote proxy error: \(error)")
+        print("Remote proxy error: \(error)")
     }
 
     private lazy var serviceConnection: NSXPCConnection = {
