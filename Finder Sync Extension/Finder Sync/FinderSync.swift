@@ -23,6 +23,7 @@ class FinderSync: FIFinderSync {
 
     fileprivate let finderController = FIFinderSyncController.default()
     fileprivate let git = Git()
+    fileprivate let gitService = GitService()
 
     // MARK: - Initializer
 
@@ -110,20 +111,16 @@ extension FinderSync {
 
     func createToolbarMenu() -> NSMenu {
         let toolbarMenu = NSMenu(title: "Toolbar menu")
-//        let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(menuItem:)))
+        let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(_:)))
 
-//        toolbarMenu.addItem(createRepositoryMenuItem)
+        toolbarMenu.addItem(createRepositoryMenuItem)
 
         return toolbarMenu
     }
 
     @IBAction func createRepositoryDidPress(_ menuItem: NSMenuItem) {
         if let url = finderController.targetedURL(), url.hasDirectoryPath {
-            do {
-                try git.createRepository(at: url)
-            } catch let error {
-                NSLog("⚠️ Error \(error)")
-            }
+            gitService.createRepository(at: url)
         }
     }
 
