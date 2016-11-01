@@ -1,5 +1,5 @@
 //
-//  GitServiceProtocol.swift
+//  Result.swift
 //  Up-N-Down
 //
 //  Created by Thomas Paul Mann on 01/11/2016.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-@objc protocol GitServiceProtocol {
+enum Result<Value> {
 
-    func createRepository(at url: URL, completionHandler: ((Error?) -> (Void)))
-
+    case success(Value)
+    case failure(Error)
+    
 }

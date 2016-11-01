@@ -120,7 +120,9 @@ extension FinderSync {
 
     @IBAction func createRepositoryDidPress(_ menuItem: NSMenuItem) {
         if let url = finderController.targetedURL(), url.hasDirectoryPath {
-            gitService.createRepository(at: url)
+            gitService.createRepository(at: url) { result in
+                // Todo: Handle Error
+            }
         }
     }
 

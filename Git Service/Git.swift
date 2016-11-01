@@ -11,13 +11,12 @@ import ObjectiveGit
 
 class Git : NSObject, GitServiceProtocol {
 
-    func createRepository(at url: URL, errorHandler: GitServiceProtocol.ErrorHandler) {
+    func createRepository(at url: URL, completionHandler: ((Error?) -> (Void))) {
         do {
             _ = try GTRepository.initializeEmpty(atFileURL: url, options: nil)
-            NSLog("Created repository at \(url)")
+            completionHandler(nil)
         } catch let error {
-            NSLog("Error during creating repository: \(error)")
-            errorHandler(error)
+            completionHandler(error)
         }
     }
 
