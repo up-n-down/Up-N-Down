@@ -11,12 +11,16 @@ import ObjectiveGit
 
 class Git : NSObject, GitServiceProtocol {
 
-    func createRepository(at url: URL, completionHandler: ((Error?) -> (Void))) {
-        do {
-            _ = try GTRepository.initializeEmpty(atFileURL: url, options: nil)
-            completionHandler(nil)
-        } catch let error {
-            completionHandler(error)
+    private let queue = DispatchQueue(label: "io.up-n-down.up-n-down-git-service")
+
+    func createRepository(at url: URL, completionHandler: @escaping ((Error?) -> (Void))) {
+        queue.async {
+            do {
+                _ = try GTRepository.initializeEmpty(atFileURL: url, options: nil)
+                completionHandler(nil)
+            } catch let error {
+                completionHandler(error)
+            }
         }
     }
 

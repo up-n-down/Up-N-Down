@@ -10,6 +10,6 @@ import Foundation
 
 @objc protocol GitServiceProtocol {
 
-    func createRepository(at url: URL, completionHandler: ((Error?) -> (Void)))
+    func createRepository(at url: URL, completionHandler: @escaping ((Error?) -> (Void)))
 
 }
