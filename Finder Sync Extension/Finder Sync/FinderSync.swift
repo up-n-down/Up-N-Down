@@ -127,11 +127,27 @@ extension FinderSync {
     }
 
     @IBAction func cloneRepositoryDidPress(_ menuItem: NSMenuItem) {
-        if let url = finderController.targetedURL(), url.hasDirectoryPath {
-            let path = "" // TODO: read from alert
+        let completionHandler: NSAlert.CompletionHandler = { [weak self] response, textfield in
+            if response != NSAlertFirstButtonReturn {
+                return
+            }
 
-            gitService.cloneRepository(from: path, to: url, errorHandler: errorHandler)
+            guard
+                let repoURL = textfield?.stringValue,
+                let repoName = URL(string: repoURL)?.lastPathComponent,
+                let destinationURL = self?.finderController.targetedURL()?.appendingPathComponent(repoName)
+            else {
+                return
+            }
+
+            self?.gitService.cloneRepository(from: repoURL, to: destinationURL, errorHandler: errorHandler)
         }
+
+        NSAlert.show(with: "Clone Repository",
+                     message: "Enter a Git URL:",
+                     actionButtonTitle: "Clone",
+                     inputTextFieldPlaceholder: "git@example.com/example.git",
+                     completionHandler: completionHandler)
     }
 
 }

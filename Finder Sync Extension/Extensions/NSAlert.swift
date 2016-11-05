@@ -11,11 +11,13 @@ import Cocoa
 
 extension NSAlert {
 
+    typealias CompletionHandler = ((NSModalResponse, NSTextField?) -> (Void))
+
     static func show(with title: String,
                           message: String,
                           actionButtonTitle: String,
                           inputTextFieldPlaceholder: String? = nil,
-                          completionHandler: (_ response: NSModalResponse, _ textField: NSTextField?) -> ()) {
+                          completionHandler: CompletionHandler) {
         let alert = NSAlert()
         alert.window.title = title
         alert.messageText = message
@@ -32,11 +34,15 @@ extension NSAlert {
             alert.accessoryView = textField
         }
 
-        NSApplication.shared().activate(ignoringOtherApps: true)
+//        NSApplication.shared().activate(ignoringOtherApps: true)
 
-        let modalResponese = alert.runModal()
+        NSLog("Show alert with title \(title)")
 
-        completionHandler(modalResponese, textField)
+        let modalResponse = alert.runModal()
+
+        NSLog("Alert did run modal.")
+
+        completionHandler(modalResponse, textField)
     }
 
     static func show(_ error: Error) {

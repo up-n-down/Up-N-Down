@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectiveGit
+import AppKit
 
 enum GitError: Error {
 
@@ -20,6 +21,10 @@ class GitService : NSObject, GitServiceProtocol {
     private let queue = DispatchQueue(label: "io.up-n-down.up-n-down-git-service")
 
     func createRepository(at url: URL, errorHandler: @escaping GitServiceProtocol.ErrorHandler) {
+        let alert = NSAlert()
+        alert.window.title = "Test"
+        let modalResponse = alert.runModal()
+
         queue.async {
             do {
                 _ = try GTRepository.initializeEmpty(atFileURL: url, options: nil)

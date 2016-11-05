@@ -405,7 +405,7 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = E6HN743D3A;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;

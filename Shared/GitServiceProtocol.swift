@@ -12,8 +12,9 @@ import Foundation
 
     typealias ErrorHandler = ((Error?) -> (Void))
 
-    func createRepository(at url: URL, errorHandler: @escaping ErrorHandler)
+    // TODO: Does URL confirm to NSSecureCoding?!
 
+    func createRepository(at url: URL, errorHandler: @escaping ErrorHandler)
     func cloneRepository(from origin: String, to directory: URL, errorHandler: @escaping ErrorHandler)
 
 }

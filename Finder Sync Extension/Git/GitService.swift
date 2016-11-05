@@ -17,6 +17,8 @@ class GitService {
     private lazy var serviceConnection: NSXPCConnection = {
         let connection = NSXPCConnection(serviceName: GitService.name)
         connection.remoteObjectInterface = NSXPCInterface(with: GitServiceProtocol.self)
+        connection.interruptionHandler = self.interruptionHandler
+        connection.invalidationHandler = self.invalidationHandler
         connection.resume()
 
         return connection
@@ -27,6 +29,9 @@ class GitService {
 
         return self.serviceConnection.remoteObjectProxyWithErrorHandler(errorHandler) as! GitServiceProtocol
     }()
+
+    public var interruptionHandler: (() -> ())? = { NSLog("Service connection was interrupted!") }
+    public var invalidationHandler: (() -> ())? = { NSLog("Service connection was invalidated!") }
 
     // MARK: - Lifecycle
 
