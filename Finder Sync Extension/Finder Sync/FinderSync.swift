@@ -123,6 +123,7 @@ extension FinderSync {
             gitService.createRepository(at: url) { error in
                 // If there is no error, do nothing.
                 guard let error = error else {
+                    NSLog("Did create repository at \(url)")
                     return
                 }
 

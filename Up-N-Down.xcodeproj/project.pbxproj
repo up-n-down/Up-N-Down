@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE089E2E1DC9016A0019A090 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54ABE1DC8FE8100FE7B98 /* main.swift */; };
-		BE089E2F1DC9016F0019A090 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D6CD41DC900F1001C0255 /* Git.swift */; };
+		BE089E2F1DC9016F0019A090 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D6CD41DC900F1001C0255 /* GitService.swift */; };
 		BE3029D31DCE438300FA4A93 /* NSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3029D11DCE434800FA4A93 /* NSAlert.swift */; };
 		BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */; };
 		BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */; };
@@ -116,7 +116,7 @@
 		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
 		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
 		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
-		BE4D6CD41DC900F1001C0255 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		BE4D6CD41DC900F1001C0255 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
 		BEC9B3521DC9204F008BDB89 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
 		BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
 		BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Up-N-Down Git Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				BED54ABE1DC8FE8100FE7B98 /* main.swift */,
-				BE4D6CD41DC900F1001C0255 /* Git.swift */,
+				BE4D6CD41DC900F1001C0255 /* GitService.swift */,
 				BEC9B3521DC9204F008BDB89 /* GitStatus.swift */,
 				BED54ABC1DC8FD9C00FE7B98 /* Supporting Files */,
 			);
@@ -530,7 +530,7 @@
 				BE089E2E1DC9016A0019A090 /* main.swift in Sources */,
 				BED54AC41DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
 				BEC9B3531DC9204F008BDB89 /* GitStatus.swift in Sources */,
-				BE089E2F1DC9016F0019A090 /* Git.swift in Sources */,
+				BE089E2F1DC9016F0019A090 /* GitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

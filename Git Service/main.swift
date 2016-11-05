@@ -12,7 +12,7 @@ class GitServiceDelegate : NSObject, NSXPCListenerDelegate {
 
     func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool {
         newConnection.exportedInterface = NSXPCInterface(with: GitServiceProtocol.self)
-        let exportedObject = Git()
+        let exportedObject = GitService()
         newConnection.exportedObject = exportedObject
         newConnection.resume()
         return true

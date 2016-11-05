@@ -14,10 +14,6 @@ class GitService {
 
     private static let name = "io.up-n-down.up-n-down-git-service"
 
-    private let errorHandler: ((Error) -> (Void)) = { error in
-        NSLog("Remote proxy error: \(error)")
-    }
-
     private lazy var serviceConnection: NSXPCConnection = {
         let connection = NSXPCConnection(serviceName: GitService.name)
         connection.remoteObjectInterface = NSXPCInterface(with: GitServiceProtocol.self)
@@ -27,7 +23,9 @@ class GitService {
     }()
 
     private lazy var git: GitServiceProtocol = {
-        return self.serviceConnection.remoteObjectProxyWithErrorHandler(self.errorHandler) as! GitServiceProtocol
+        let errorHandler: ((Error) -> (Void)) = { NSLog("Remote proxy error: \($0)") }
+
+        return self.serviceConnection.remoteObjectProxyWithErrorHandler(errorHandler) as! GitServiceProtocol
     }()
 
     // MARK: - Lifecycle
@@ -38,16 +36,12 @@ class GitService {
 
     // MARK: - Public API
 
-    func createRepository(at url: URL, completionHandler: @escaping ((Error?) -> (Void))) {
-        git.createRepository(at: url) { error in
-            if error == nil {
-                NSLog("Created repository at \(url)")
-            } else {
-                NSLog("Error during creating repository: \(error)")
-            }
-
-            completionHandler(error)
-        }
+    func createRepository(at url: URL, errorHandler: @escaping GitServiceProtocol.ErrorHandler) {
+        git.createRepository(at: url, errorHandler:  errorHandler)
     }
-    
+
+    func cloneRepository(from origin: String, to directory: URL, errorHandler: @escaping GitServiceProtocol.ErrorHandler) {
+        git.cloneRepository(from: origin, to: directory, errorHandler: errorHandler)
+    }
+
 }

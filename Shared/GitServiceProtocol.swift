@@ -10,6 +10,10 @@ import Foundation
 
 @objc protocol GitServiceProtocol {
 
-    func createRepository(at url: URL, completionHandler: @escaping ((Error?) -> (Void)))
+    typealias ErrorHandler = ((Error?) -> (Void))
+
+    func createRepository(at url: URL, errorHandler: @escaping ErrorHandler)
+
+    func cloneRepository(from origin: String, to directory: URL, errorHandler: @escaping ErrorHandler)
 
 }
