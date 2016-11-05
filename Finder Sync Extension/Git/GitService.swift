@@ -38,18 +38,16 @@ class GitService {
 
     // MARK: - Public API
 
-    func createRepository(at url: URL, completionHandler: @escaping ((Result<Void>) -> (Void))) {
+    func createRepository(at url: URL, completionHandler: @escaping ((Error?) -> (Void))) {
         git.createRepository(at: url) { error in
-            DispatchQueue.main.async {
-                if error == nil {
-                    NSLog("Created repository at \(url)")
-                    completionHandler(.success())
-                } else {
-                    NSLog("Error during creating repository: \(error)")
-                    completionHandler(.failure(error!))
-                }
+            if error == nil {
+                NSLog("Created repository at \(url)")
+            } else {
+                NSLog("Error during creating repository: \(error)")
             }
+
+            completionHandler(error)
         }
     }
-
+    
 }

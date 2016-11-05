@@ -93,7 +93,7 @@ extension FinderSync {
 
 }
 
-// MARK: - Toolbar 
+// MARK: - Toolbar
 
 extension FinderSync {
 
@@ -120,8 +120,15 @@ extension FinderSync {
 
     @IBAction func createRepositoryDidPress(_ menuItem: NSMenuItem) {
         if let url = finderController.targetedURL(), url.hasDirectoryPath {
-            gitService.createRepository(at: url) { result in
-                // Todo: Handle Error
+            gitService.createRepository(at: url) { error in
+                // If there is no error, do nothing.
+                guard let error = error else {
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    NSAlert.show(error)
+                }
             }
         }
     }
