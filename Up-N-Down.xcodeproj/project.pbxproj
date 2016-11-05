@@ -94,7 +94,7 @@
 
 /* Begin PBXFileReference section */
 		BE089E301DC9019A0019A090 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
-		BE089E321DC904990019A090 /* Up-N-Down.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Up-N-Down.entitlements"; path = "../Up-N-Down.entitlements"; sourceTree = "<group>"; };
+		BE089E321DC904990019A090 /* Up-N-Down.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Up-N-Down.entitlements"; sourceTree = "<group>"; };
 		BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		BE3A9FD71DB3DCDD0009D265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3A9FD91DB3DCDD0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up-N-Down Finder Sync Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Up_N_Down_Finder_Sync_Extension.entitlements; sourceTree = "<group>"; };
+		BE3A9FF81DB3DD5A0009D265 /* Finder-Sync-Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Finder-Sync-Extension.entitlements"; sourceTree = "<group>"; };
 		BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		BE3A9FFB1DB3DD5A0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3AA0031DB3EA530009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
 		BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Up-N-Down Git Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED54AB41DC8FD7500FE7B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BED54ABD1DC8FDA600FE7B98 /* Up-N-Down Git Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Up-N-Down Git Service.entitlements"; sourceTree = "<group>"; };
+		BED54ABD1DC8FDA600FE7B98 /* Git-Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Git-Service.entitlements"; sourceTree = "<group>"; };
 		BED54ABE1DC8FE8100FE7B98 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitServiceProtocol.swift; path = Shared/GitServiceProtocol.swift; sourceTree = "<group>"; };
 		BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 			children = (
 				BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */,
 				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
-				BE3A9FF81DB3DD5A0009D265 /* Up_N_Down_Finder_Sync_Extension.entitlements */,
+				BE3A9FF81DB3DD5A0009D265 /* Finder-Sync-Extension.entitlements */,
 				BE3AA0031DB3EA530009D265 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
@@ -279,7 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				BED54AB41DC8FD7500FE7B98 /* Info.plist */,
-				BED54ABD1DC8FDA600FE7B98 /* Up-N-Down Git Service.entitlements */,
+				BED54ABD1DC8FDA600FE7B98 /* Git-Service.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -674,7 +674,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Up-N-Down.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "App/Up-N-Down.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -698,7 +698,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Up-N-Down.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "App/Up-N-Down.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -718,7 +718,7 @@
 		BE3AA0001DB3DD5A0009D265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder-Sync-Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -740,7 +740,7 @@
 		BE3AA0011DB3DD5A0009D265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Up_N_Down_Finder_Sync_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder-Sync-Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -761,7 +761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Git Service/Up-N-Down Git Service.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Git Service/Git-Service.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
@@ -782,7 +782,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Git Service/Up-N-Down Git Service.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Git Service/Git-Service.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E6HN743D3A;
