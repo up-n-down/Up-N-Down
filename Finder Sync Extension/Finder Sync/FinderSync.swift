@@ -112,25 +112,25 @@ extension FinderSync {
     func createToolbarMenu() -> NSMenu {
         let toolbarMenu = NSMenu(title: "Toolbar menu")
         let createRepositoryMenuItem = NSMenuItem(title: "Create Repository", action: #selector(FinderSync.createRepositoryDidPress(_:)))
+        let cloneRepositoryMenuItem = NSMenuItem(title: "Clone Repository", action: #selector(FinderSync.cloneRepositoryDidPress(_:)))
 
         toolbarMenu.addItem(createRepositoryMenuItem)
+        toolbarMenu.addItem(cloneRepositoryMenuItem)
 
         return toolbarMenu
     }
 
     @IBAction func createRepositoryDidPress(_ menuItem: NSMenuItem) {
         if let url = finderController.targetedURL(), url.hasDirectoryPath {
-            gitService.createRepository(at: url) { error in
-                // If there is no error, do nothing.
-                guard let error = error else {
-                    NSLog("Did create repository at \(url)")
-                    return
-                }
+            gitService.createRepository(at: url, errorHandler: errorHandler)
+        }
+    }
 
-                DispatchQueue.main.async {
-                    NSAlert.show(error)
-                }
-            }
+    @IBAction func cloneRepositoryDidPress(_ menuItem: NSMenuItem) {
+        if let url = finderController.targetedURL(), url.hasDirectoryPath {
+            let path = "" // TODO: read from alert
+
+            gitService.cloneRepository(from: path, to: url, errorHandler: errorHandler)
         }
     }
 

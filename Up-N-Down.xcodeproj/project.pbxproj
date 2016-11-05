@@ -10,6 +10,7 @@
 		BE089E2E1DC9016A0019A090 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54ABE1DC8FE8100FE7B98 /* main.swift */; };
 		BE089E2F1DC9016F0019A090 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D6CD41DC900F1001C0255 /* GitService.swift */; };
 		BE3029D31DCE438300FA4A93 /* NSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3029D11DCE434800FA4A93 /* NSAlert.swift */; };
+		BE3029D61DCE48F400FA4A93 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */; };
 		BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */; };
 		BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */; };
 		BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		BE089E301DC9019A0019A090 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
 		BE089E321DC904990019A090 /* Up-N-Down.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Up-N-Down.entitlements"; sourceTree = "<group>"; };
 		BE3029D11DCE434800FA4A93 /* NSAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAlert.swift; sourceTree = "<group>"; };
+		BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				BE3AA00E1DB3F8540009D265 /* Git */,
 				BE3AA0111DB3F9790009D265 /* Extensions */,
 				BE3A9FF71DB3DD5A0009D265 /* Supporting Files */,
+				BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */,
 			);
 			path = "Finder Sync Extension";
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				BEC9B34F1DC90D04008BDB89 /* GitService.swift in Sources */,
 				BED54AC31DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
 				BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */,
+				BE3029D61DCE48F400FA4A93 /* ErrorHandler.swift in Sources */,
 				BE3029D31DCE438300FA4A93 /* NSAlert.swift in Sources */,
 				BE3AA0101DB3F8630009D265 /* Git.swift in Sources */,
 			);
