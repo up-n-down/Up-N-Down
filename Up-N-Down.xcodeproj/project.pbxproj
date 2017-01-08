@@ -7,424 +7,380 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE089E2E1DC9016A0019A090 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54ABE1DC8FE8100FE7B98 /* main.swift */; };
-		BE089E2F1DC9016F0019A090 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4D6CD41DC900F1001C0255 /* GitService.swift */; };
-		BE3029D31DCE438300FA4A93 /* NSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3029D11DCE434800FA4A93 /* NSAlert.swift */; };
-		BE3029D61DCE48F400FA4A93 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */; };
-		BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */; };
-		BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */; };
-		BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */; };
-		BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */; };
-		BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */; };
-		BE3A9FFE1DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3AA0031DB3EA530009D265 /* Assets.xcassets */; };
-		BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0051DB3EC540009D265 /* Badge.swift */; };
-		BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */; };
-		BE3AA00C1DB3F4940009D265 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */; };
-		BE3AA0101DB3F8630009D265 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA00F1DB3F8630009D265 /* Git.swift */; };
-		BE3AA0131DB3F9820009D265 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0121DB3F9820009D265 /* URL.swift */; };
-		BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0141DB3FB690009D265 /* Git+Status.swift */; };
-		BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */; };
-		BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */; };
-		BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */; };
-		BEC9B34D1DC90A9D008BDB89 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */; };
-		BEC9B34F1DC90D04008BDB89 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE089E301DC9019A0019A090 /* GitService.swift */; };
-		BEC9B3531DC9204F008BDB89 /* GitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9B3521DC9204F008BDB89 /* GitStatus.swift */; };
-		BECB06E61DC62F8400753CF3 /* NSMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */; };
-		BED54AB71DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BED54AC21DC8FE9900FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
-		BED54AC31DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
-		BED54AC41DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */; };
-		BEE74FCA1DE34DEF00A6DD44 /* Up-N-Down Git Service.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BEE9E63D1DC12A2E00D3CA2B /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */; };
-		BEE9E6401DC1301400D3CA2B /* Regular.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE9E63E1DC1301400D3CA2B /* Regular.storyboard */; };
-		BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */; };
-		BEED61A41DBE964300861DB8 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */; };
+		BE27AF541DE6FB1A001A76BB /* FinderSync+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EFC1DE59F8B00B9C88E /* FinderSync+Menu.swift */; };
+		BE519EED1DE4C35C00B9C88E /* NSAlertExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EEB1DE4C2BC00B9C88E /* NSAlertExtensions.swift */; };
+		BE519EF01DE4C82800B9C88E /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EEE1DE4C7F700B9C88E /* URLExtensions.swift */; };
+		BE519EF31DE4CD2B00B9C88E /* FinderSync+Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EF11DE4CD1B00B9C88E /* FinderSync+Git.swift */; };
+		BE519EF51DE4D07800B9C88E /* StatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EF41DE4D07800B9C88E /* StatusHandler.swift */; };
+		BE519EF91DE4DA3500B9C88E /* ObjectiveGitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EF81DE4DA3500B9C88E /* ObjectiveGitExtensions.swift */; };
+		BE519EFB1DE4ECFA00B9C88E /* RepositoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE519EFA1DE4ECFA00B9C88E /* RepositoryHandler.swift */; };
+		BED0CEE81DF5E1B100484C63 /* FinderSync+ContextualMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0CEE61DF5E18900484C63 /* FinderSync+ContextualMenu.swift */; };
+		BED0CEEA1DF5E6CC00484C63 /* IndexHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0CEE91DF5E6CC00484C63 /* IndexHandler.swift */; };
+		BED0CEEC1DF5EE9900484C63 /* CommitHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0CEEB1DF5EE9900484C63 /* CommitHandler.swift */; };
+		BEE74FD81DE366FE00A6DD44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE74FD71DE366FE00A6DD44 /* AppDelegate.swift */; };
+		BEE74FDA1DE366FE00A6DD44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE74FD91DE366FE00A6DD44 /* ViewController.swift */; };
+		BEE74FDC1DE366FE00A6DD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE74FDB1DE366FE00A6DD44 /* Assets.xcassets */; };
+		BEE74FDF1DE366FE00A6DD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE74FDD1DE366FE00A6DD44 /* Main.storyboard */; };
+		BEE74FEF1DE3678200A6DD44 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE74FEE1DE3678200A6DD44 /* FinderSync.swift */; };
+		BEE74FF31DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEE74FEA1DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEE750081DE367FB00A6DD44 /* Up-N-Down Git Service.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = BEE74FFD1DE367FB00A6DD44 /* Up-N-Down Git Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEE7500E1DE3680E00A6DD44 /* Up-N-Down Git Service.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEE74FFD1DE367FB00A6DD44 /* Up-N-Down Git Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEE750151DE3691C00A6DD44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750141DE3691C00A6DD44 /* main.swift */; };
+		BEE750181DE3692800A6DD44 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750161DE3692800A6DD44 /* GitService.swift */; };
+		BEE750191DE3692800A6DD44 /* GitServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750171DE3692800A6DD44 /* GitServiceDelegate.swift */; };
+		BEE750231DE36A5E00A6DD44 /* GitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750211DE36A2800A6DD44 /* GitClient.swift */; };
+		BEE7502F1DE372EA00A6DD44 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE7502E1DE372EA00A6DD44 /* ObjectiveGit.framework */; };
+		BEE750341DE37B7900A6DD44 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750331DE37B7900A6DD44 /* Badge.swift */; };
+		BEE750361DE37B8600A6DD44 /* FIFinderSyncControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750351DE37B8600A6DD44 /* FIFinderSyncControllerExtensions.swift */; };
+		BEE750391DE37C7600A6DD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE750381DE37C7600A6DD44 /* Assets.xcassets */; };
+		BEE7503B1DE37D6300A6DD44 /* NSMenuItemExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7503A1DE37D6300A6DD44 /* NSMenuItemExtensions.swift */; };
+		BEE7503F1DE386ED00A6DD44 /* FinderSync+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7503E1DE386ED00A6DD44 /* FinderSync+Toolbar.swift */; };
+		BEE750411DE3874E00A6DD44 /* FinderSync+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750401DE3874E00A6DD44 /* FinderSync+Observation.swift */; };
+		BEE750491DE387FD00A6DD44 /* GitStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE750471DE387FB00A6DD44 /* GitStatusExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BE3A9FFC1DB3DD5A0009D265 /* PBXContainerItemProxy */ = {
+		BEE74FF11DE3678200A6DD44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BE3A9FC51DB3DCDD0009D265 /* Project object */;
+			containerPortal = BEE74FCC1DE366FE00A6DD44 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BE3A9FF41DB3DD5A0009D265;
-			remoteInfo = "Up N Down Finder Sync Extension";
+			remoteGlobalIDString = BEE74FE91DE3678200A6DD44;
+			remoteInfo = "Finder Sync Extension";
 		};
-		BED54AB51DC8FD7500FE7B98 /* PBXContainerItemProxy */ = {
+		BEE750061DE367FB00A6DD44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BE3A9FC51DB3DCDD0009D265 /* Project object */;
+			containerPortal = BEE74FCC1DE366FE00A6DD44 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BED54AAB1DC8FD7500FE7B98;
-			remoteInfo = "Up-N-Down Git Service";
+			remoteGlobalIDString = BEE74FFC1DE367FB00A6DD44;
+			remoteInfo = "Git Service";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BE3A9FF01DB3DCF80009D265 /* Embed App Extensions */ = {
+		BEE74FF71DE3678200A6DD44 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				BE3A9FFE1DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */,
+				BEE74FF31DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE4BF1D71DB4173300063FE7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				BE4BF1D91DB4174C00063FE7 /* ObjectiveGit.framework.dSYM in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BED54ABB1DC8FD7500FE7B98 /* Embed XPC Services */ = {
+		BEE7500C1DE367FB00A6DD44 /* Embed XPC Services */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
 			dstSubfolderSpec = 16;
 			files = (
-				BED54AB71DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc in Embed XPC Services */,
+				BEE750081DE367FB00A6DD44 /* Up-N-Down Git Service.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEE74FC91DE34DE300A6DD44 /* CopyFiles */ = {
+		BEE7500D1DE3680400A6DD44 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Content/XPCServices;
+			dstPath = Contents/XPCServices;
 			dstSubfolderSpec = 1;
 			files = (
-				BEE74FCA1DE34DEF00A6DD44 /* Up-N-Down Git Service.xpc in CopyFiles */,
+				BEE7500E1DE3680E00A6DD44 /* Up-N-Down Git Service.xpc in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE089E301DC9019A0019A090 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
-		BE089E321DC904990019A090 /* Up-N-Down.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Up-N-Down.entitlements"; sourceTree = "<group>"; };
-		BE3029D11DCE434800FA4A93 /* NSAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAlert.swift; sourceTree = "<group>"; };
-		BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularViewController.swift; sourceTree = "<group>"; };
-		BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BE3A9FD71DB3DCDD0009D265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE3A9FD91DB3DCDD0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up-N-Down Finder Sync Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE3A9FF81DB3DD5A0009D265 /* Finder-Sync-Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Finder-Sync-Extension.entitlements"; sourceTree = "<group>"; };
-		BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
-		BE3A9FFB1DB3DD5A0009D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE3AA0031DB3EA530009D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BE3AA0051DB3EC540009D265 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
-		BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIFinderSyncController+Badge.swift"; sourceTree = "<group>"; };
-		BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
-		BE3AA00F1DB3F8630009D265 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
-		BE3AA0121DB3F9820009D265 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		BE3AA0141DB3FB690009D265 /* Git+Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Git+Status.swift"; sourceTree = "<group>"; };
-		BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GTRepository+URL.swift"; sourceTree = "<group>"; };
-		BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
-		BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectiveGit.framework.dSYM; path = ../Carthage/Build/Mac/ObjectiveGit.framework.dSYM; sourceTree = "<group>"; };
-		BE4D6CD41DC900F1001C0255 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
-		BEC9B3521DC9204F008BDB89 /* GitStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatus.swift; sourceTree = "<group>"; };
-		BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
-		BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Up-N-Down Git Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BED54AB41DC8FD7500FE7B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BED54ABD1DC8FDA600FE7B98 /* Git-Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Git-Service.entitlements"; sourceTree = "<group>"; };
-		BED54ABE1DC8FE8100FE7B98 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitServiceProtocol.swift; path = Shared/GitServiceProtocol.swift; sourceTree = "<group>"; };
-		BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
-		BEE9E63F1DC1301400D3CA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Regular.storyboard; sourceTree = "<group>"; };
-		BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		BEED61A31DBE964300861DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnBoarding.storyboard; sourceTree = "<group>"; };
+		BE519EEB1DE4C2BC00B9C88E /* NSAlertExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAlertExtensions.swift; sourceTree = "<group>"; };
+		BE519EEE1DE4C7F700B9C88E /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		BE519EF11DE4CD1B00B9C88E /* FinderSync+Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FinderSync+Git.swift"; sourceTree = "<group>"; };
+		BE519EF41DE4D07800B9C88E /* StatusHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusHandler.swift; sourceTree = "<group>"; };
+		BE519EF81DE4DA3500B9C88E /* ObjectiveGitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectiveGitExtensions.swift; sourceTree = "<group>"; };
+		BE519EFA1DE4ECFA00B9C88E /* RepositoryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryHandler.swift; sourceTree = "<group>"; };
+		BE519EFC1DE59F8B00B9C88E /* FinderSync+Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FinderSync+Menu.swift"; sourceTree = "<group>"; };
+		BED0CEE61DF5E18900484C63 /* FinderSync+ContextualMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FinderSync+ContextualMenu.swift"; sourceTree = "<group>"; };
+		BED0CEE91DF5E6CC00484C63 /* IndexHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexHandler.swift; sourceTree = "<group>"; };
+		BED0CEEB1DF5EE9900484C63 /* CommitHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitHandler.swift; sourceTree = "<group>"; };
+		BEE74FD41DE366FE00A6DD44 /* Up-N-Down.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up-N-Down.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE74FD71DE366FE00A6DD44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEE74FD91DE366FE00A6DD44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEE74FDB1DE366FE00A6DD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEE74FDE1DE366FE00A6DD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEE74FE01DE366FE00A6DD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE74FEA1DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up-N-Down Finder Sync Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE74FED1DE3678200A6DD44 /* Finder_Sync_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finder_Sync_Extension.entitlements; sourceTree = "<group>"; };
+		BEE74FEE1DE3678200A6DD44 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		BEE74FF01DE3678200A6DD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE74FFD1DE367FB00A6DD44 /* Up-N-Down Git Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Up-N-Down Git Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE750051DE367FB00A6DD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE750141DE3691C00A6DD44 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BEE750161DE3692800A6DD44 /* GitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
+		BEE750171DE3692800A6DD44 /* GitServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitServiceDelegate.swift; sourceTree = "<group>"; };
+		BEE750211DE36A2800A6DD44 /* GitClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitClient.swift; sourceTree = "<group>"; };
+		BEE7502E1DE372EA00A6DD44 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/Mac/ObjectiveGit.framework; sourceTree = "<group>"; };
+		BEE750331DE37B7900A6DD44 /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		BEE750351DE37B8600A6DD44 /* FIFinderSyncControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIFinderSyncControllerExtensions.swift; sourceTree = "<group>"; };
+		BEE750381DE37C7600A6DD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEE7503A1DE37D6300A6DD44 /* NSMenuItemExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuItemExtensions.swift; sourceTree = "<group>"; };
+		BEE7503E1DE386ED00A6DD44 /* FinderSync+Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FinderSync+Toolbar.swift"; sourceTree = "<group>"; };
+		BEE750401DE3874E00A6DD44 /* FinderSync+Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FinderSync+Observation.swift"; sourceTree = "<group>"; };
+		BEE750471DE387FB00A6DD44 /* GitStatusExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitStatusExtensions.swift; sourceTree = "<group>"; };
+		BEE7504F1DE42EFA00A6DD44 /* GitServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitServiceProtocol.h; sourceTree = "<group>"; };
+		BEE7506E1DE430EC00A6DD44 /* GitServiceBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitServiceBridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE3A9FCA1DB3DCDD0009D265 /* Frameworks */ = {
+		BEE74FD11DE366FE00A6DD44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE3A9FF21DB3DD5A0009D265 /* Frameworks */ = {
+		BEE74FE71DE3678200A6DD44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3AA00C1DB3F4940009D265 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BED54AA91DC8FD7500FE7B98 /* Frameworks */ = {
+		BEE74FFA1DE367FB00A6DD44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC9B34D1DC90A9D008BDB89 /* ObjectiveGit.framework in Frameworks */,
+				BEE7502F1DE372EA00A6DD44 /* ObjectiveGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BE3A9FC41DB3DCDD0009D265 = {
+		BEE74FCB1DE366FE00A6DD44 = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FCF1DB3DCDD0009D265 /* App */,
-				BE3A9FF61DB3DD5A0009D265 /* Finder Sync Extension */,
-				BED54AAD1DC8FD7500FE7B98 /* Git Service */,
-				BED54AC01DC8FE8A00FE7B98 /* Shared */,
-				BE3A9FCE1DB3DCDD0009D265 /* Products */,
-				BE3AA00A1DB3F4940009D265 /* Frameworks */,
+				BEE74FD61DE366FE00A6DD44 /* App */,
+				BEE74FEB1DE3678200A6DD44 /* Finder Sync Extension */,
+				BEE750201DE36A1500A6DD44 /* Git Client */,
+				BEE74FFE1DE367FB00A6DD44 /* Git Service */,
+				BEE7501A1DE3696A00A6DD44 /* Shared */,
+				BEE74FD51DE366FE00A6DD44 /* Products */,
+				BEE7502D1DE372EA00A6DD44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BE3A9FCE1DB3DCDD0009D265 /* Products */ = {
+		BEE74FD51DE366FE00A6DD44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */,
-				BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */,
-				BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */,
+				BEE74FD41DE366FE00A6DD44 /* Up-N-Down.app */,
+				BEE74FEA1DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex */,
+				BEE74FFD1DE367FB00A6DD44 /* Up-N-Down Git Service.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE3A9FCF1DB3DCDD0009D265 /* App */ = {
+		BEE74FD61DE366FE00A6DD44 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FD01DB3DCDD0009D265 /* AppDelegate.swift */,
-				BE3AA01A1DB402DE0009D265 /* TransparentWindow.swift */,
-				BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */,
-				BEE9E6411DC1302D00D3CA2B /* Regular */,
-				BEED61A51DBE96AD00861DB8 /* OnBoarding */,
-				BE3AA0021DB3E9C80009D265 /* Supporting Files */,
-				BEE9E63C1DC12A2E00D3CA2B /* NSColor+Theme.swift */,
+				BEE74FD71DE366FE00A6DD44 /* AppDelegate.swift */,
+				BEE74FD91DE366FE00A6DD44 /* ViewController.swift */,
+				BEE74FDD1DE366FE00A6DD44 /* Main.storyboard */,
+				BEE74FF81DE367D000A6DD44 /* Supporting Files */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		BE3A9FF61DB3DD5A0009D265 /* Finder Sync Extension */ = {
+		BEE74FEB1DE3678200A6DD44 /* Finder Sync Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BE3AA00D1DB3F84B0009D265 /* Finder Sync */,
-				BE3AA00E1DB3F8540009D265 /* Git */,
-				BE3AA0111DB3F9790009D265 /* Extensions */,
-				BE3A9FF71DB3DD5A0009D265 /* Supporting Files */,
-				BE3029D41DCE48B900FA4A93 /* ErrorHandler.swift */,
+				BEE74FEE1DE3678200A6DD44 /* FinderSync.swift */,
+				BEE750401DE3874E00A6DD44 /* FinderSync+Observation.swift */,
+				BE519EFC1DE59F8B00B9C88E /* FinderSync+Menu.swift */,
+				BEE7503E1DE386ED00A6DD44 /* FinderSync+Toolbar.swift */,
+				BED0CEE61DF5E18900484C63 /* FinderSync+ContextualMenu.swift */,
+				BE519EF11DE4CD1B00B9C88E /* FinderSync+Git.swift */,
+				BEE750331DE37B7900A6DD44 /* Badge.swift */,
+				BEE750371DE37B8A00A6DD44 /* Extensions */,
+				BEE74FEC1DE3678200A6DD44 /* Supporting Files */,
 			);
 			path = "Finder Sync Extension";
 			sourceTree = "<group>";
 		};
-		BE3A9FF71DB3DD5A0009D265 /* Supporting Files */ = {
+		BEE74FEC1DE3678200A6DD44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE4BF1D81DB4174C00063FE7 /* ObjectiveGit.framework.dSYM */,
-				BE3A9FFB1DB3DD5A0009D265 /* Info.plist */,
-				BE3A9FF81DB3DD5A0009D265 /* Finder-Sync-Extension.entitlements */,
-				BE3AA0031DB3EA530009D265 /* Assets.xcassets */,
+				BEE750381DE37C7600A6DD44 /* Assets.xcassets */,
+				BEE74FF01DE3678200A6DD44 /* Info.plist */,
+				BEE74FED1DE3678200A6DD44 /* Finder_Sync_Extension.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE3AA0021DB3E9C80009D265 /* Supporting Files */ = {
+		BEE74FF81DE367D000A6DD44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE089E321DC904990019A090 /* Up-N-Down.entitlements */,
-				BE3A9FD41DB3DCDD0009D265 /* Assets.xcassets */,
-				BE3A9FD91DB3DCDD0009D265 /* Info.plist */,
+				BEE74FDB1DE366FE00A6DD44 /* Assets.xcassets */,
+				BEE74FE01DE366FE00A6DD44 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE3AA00A1DB3F4940009D265 /* Frameworks */ = {
+		BEE74FFE1DE367FB00A6DD44 /* Git Service */ = {
 			isa = PBXGroup;
 			children = (
-				BE3AA00B1DB3F4940009D265 /* ObjectiveGit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE3AA00D1DB3F84B0009D265 /* Finder Sync */ = {
-			isa = PBXGroup;
-			children = (
-				BE3A9FF91DB3DD5A0009D265 /* FinderSync.swift */,
-				BE3AA0051DB3EC540009D265 /* Badge.swift */,
-			);
-			path = "Finder Sync";
-			sourceTree = "<group>";
-		};
-		BE3AA00E1DB3F8540009D265 /* Git */ = {
-			isa = PBXGroup;
-			children = (
-				BE089E301DC9019A0019A090 /* GitService.swift */,
-				BE3AA00F1DB3F8630009D265 /* Git.swift */,
-				BE3AA0141DB3FB690009D265 /* Git+Status.swift */,
-			);
-			path = Git;
-			sourceTree = "<group>";
-		};
-		BE3AA0111DB3F9790009D265 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BE3029D11DCE434800FA4A93 /* NSAlert.swift */,
-				BE3AA0071DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift */,
-				BE3AA0161DB3FBE20009D265 /* GTRepository+URL.swift */,
-				BE3AA0121DB3F9820009D265 /* URL.swift */,
-				BECB06E41DC62EFA00753CF3 /* NSMenuItem.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BED54AAD1DC8FD7500FE7B98 /* Git Service */ = {
-			isa = PBXGroup;
-			children = (
-				BED54ABE1DC8FE8100FE7B98 /* main.swift */,
-				BE4D6CD41DC900F1001C0255 /* GitService.swift */,
-				BEC9B3521DC9204F008BDB89 /* GitStatus.swift */,
-				BED54ABC1DC8FD9C00FE7B98 /* Supporting Files */,
+				BEE750141DE3691C00A6DD44 /* main.swift */,
+				BEE750161DE3692800A6DD44 /* GitService.swift */,
+				BEE750171DE3692800A6DD44 /* GitServiceDelegate.swift */,
+				BE519EFA1DE4ECFA00B9C88E /* RepositoryHandler.swift */,
+				BE519EF41DE4D07800B9C88E /* StatusHandler.swift */,
+				BED0CEE91DF5E6CC00484C63 /* IndexHandler.swift */,
+				BED0CEEB1DF5EE9900484C63 /* CommitHandler.swift */,
+				BEE750461DE387F200A6DD44 /* Extensions */,
+				BEE7500F1DE368AD00A6DD44 /* Supporting Files */,
 			);
 			path = "Git Service";
 			sourceTree = "<group>";
 		};
-		BED54ABC1DC8FD9C00FE7B98 /* Supporting Files */ = {
+		BEE7500F1DE368AD00A6DD44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BED54AB41DC8FD7500FE7B98 /* Info.plist */,
-				BED54ABD1DC8FDA600FE7B98 /* Git-Service.entitlements */,
+				BEE750051DE367FB00A6DD44 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BED54AC01DC8FE8A00FE7B98 /* Shared */ = {
+		BEE7501A1DE3696A00A6DD44 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BED54AC11DC8FE9900FE7B98 /* GitServiceProtocol.swift */,
+				BEE7506E1DE430EC00A6DD44 /* GitServiceBridgingHeader.h */,
+				BEE7504F1DE42EFA00A6DD44 /* GitServiceProtocol.h */,
 			);
-			name = Shared;
+			path = Shared;
 			sourceTree = "<group>";
 		};
-		BEE9E6411DC1302D00D3CA2B /* Regular */ = {
+		BEE750201DE36A1500A6DD44 /* Git Client */ = {
 			isa = PBXGroup;
 			children = (
-				BE3A9FD21DB3DCDD0009D265 /* RegularViewController.swift */,
-				BEE9E63E1DC1301400D3CA2B /* Regular.storyboard */,
+				BEE750211DE36A2800A6DD44 /* GitClient.swift */,
 			);
-			name = Regular;
+			path = "Git Client";
 			sourceTree = "<group>";
 		};
-		BEED61A51DBE96AD00861DB8 /* OnBoarding */ = {
+		BEE7502D1DE372EA00A6DD44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEED61A01DBE962500861DB8 /* OnBoardingViewController.swift */,
-				BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */,
+				BEE7502E1DE372EA00A6DD44 /* ObjectiveGit.framework */,
 			);
-			name = OnBoarding;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE750371DE37B8A00A6DD44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7503A1DE37D6300A6DD44 /* NSMenuItemExtensions.swift */,
+				BEE750351DE37B8600A6DD44 /* FIFinderSyncControllerExtensions.swift */,
+				BE519EEB1DE4C2BC00B9C88E /* NSAlertExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BEE750461DE387F200A6DD44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEE750471DE387FB00A6DD44 /* GitStatusExtensions.swift */,
+				BE519EEE1DE4C7F700B9C88E /* URLExtensions.swift */,
+				BE519EF81DE4DA3500B9C88E /* ObjectiveGitExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE3A9FCC1DB3DCDD0009D265 /* Up-N-Down */ = {
+		BEE74FD31DE366FE00A6DD44 /* Up-N-Down */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down" */;
+			buildConfigurationList = BEE74FE31DE366FE00A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down" */;
 			buildPhases = (
-				BE3A9FC91DB3DCDD0009D265 /* Sources */,
-				BE3A9FCA1DB3DCDD0009D265 /* Frameworks */,
-				BE3A9FCB1DB3DCDD0009D265 /* Resources */,
-				BE3A9FF01DB3DCF80009D265 /* Embed App Extensions */,
-				BED54ABB1DC8FD7500FE7B98 /* Embed XPC Services */,
+				BEE74FD01DE366FE00A6DD44 /* Sources */,
+				BEE74FD11DE366FE00A6DD44 /* Frameworks */,
+				BEE74FD21DE366FE00A6DD44 /* Resources */,
+				BEE74FF71DE3678200A6DD44 /* Embed App Extensions */,
+				BEE7500C1DE367FB00A6DD44 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BE3A9FFD1DB3DD5A0009D265 /* PBXTargetDependency */,
-				BED54AB61DC8FD7500FE7B98 /* PBXTargetDependency */,
+				BEE74FF21DE3678200A6DD44 /* PBXTargetDependency */,
+				BEE750071DE367FB00A6DD44 /* PBXTargetDependency */,
 			);
 			name = "Up-N-Down";
-			productName = "Up N Down";
-			productReference = BE3A9FCD1DB3DCDD0009D265 /* Up-N-Down.app */;
+			productName = "Up-N-Down";
+			productReference = BEE74FD41DE366FE00A6DD44 /* Up-N-Down.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */ = {
+		BEE74FE91DE3678200A6DD44 /* Up-N-Down Finder Sync Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */;
+			buildConfigurationList = BEE74FF41DE3678200A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */;
 			buildPhases = (
-				BE3A9FF11DB3DD5A0009D265 /* Sources */,
-				BE3A9FF21DB3DD5A0009D265 /* Frameworks */,
-				BE3A9FF31DB3DD5A0009D265 /* Resources */,
-				BE3AA0091DB3F3FC0009D265 /* ShellScript */,
-				BE4BF1D71DB4173300063FE7 /* CopyFiles */,
-				BEE74FC91DE34DE300A6DD44 /* CopyFiles */,
+				BEE74FE61DE3678200A6DD44 /* Sources */,
+				BEE74FE71DE3678200A6DD44 /* Frameworks */,
+				BEE74FE81DE3678200A6DD44 /* Resources */,
+				BEE7500D1DE3680400A6DD44 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Up-N-Down Finder Sync Extension";
-			productName = "Up N Down Finder Sync Extension";
-			productReference = BE3A9FF51DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension.appex */;
+			productName = "Finder Sync Extension";
+			productReference = BEE74FEA1DE3678200A6DD44 /* Up-N-Down Finder Sync Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */ = {
+		BEE74FFC1DE367FB00A6DD44 /* Up-N-Down Git Service */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BED54ABA1DC8FD7500FE7B98 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */;
+			buildConfigurationList = BEE750091DE367FB00A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */;
 			buildPhases = (
-				BED54AA81DC8FD7500FE7B98 /* Sources */,
-				BED54AA91DC8FD7500FE7B98 /* Frameworks */,
-				BED54AAA1DC8FD7500FE7B98 /* Resources */,
-				BEC9B34E1DC90AAC008BDB89 /* ShellScript */,
+				BEE74FF91DE367FB00A6DD44 /* Sources */,
+				BEE74FFA1DE367FB00A6DD44 /* Frameworks */,
+				BEE74FFB1DE367FB00A6DD44 /* Resources */,
+				BEE7502C1DE3729500A6DD44 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Up-N-Down Git Service";
-			productName = "Up-N-Down Git Service";
-			productReference = BED54AAC1DC8FD7500FE7B98 /* Up-N-Down Git Service.xpc */;
+			productName = "Git Service";
+			productReference = BEE74FFD1DE367FB00A6DD44 /* Up-N-Down Git Service.xpc */;
 			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BE3A9FC51DB3DCDD0009D265 /* Project object */ = {
+		BEE74FCC1DE366FE00A6DD44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Thomas Paul Mann";
+				ORGANIZATIONNAME = "Up-N-Down";
 				TargetAttributes = {
-					BE3A9FCC1DB3DCDD0009D265 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0810;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
-					};
-					BE3A9FF41DB3DD5A0009D265 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0810;
-						ProvisioningStyle = Manual;
-					};
-					BED54AAB1DC8FD7500FE7B98 = {
+					BEE74FD31DE366FE00A6DD44 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 4K9RW3368R;
+						ProvisioningStyle = Automatic;
+					};
+					BEE74FE91DE3678200A6DD44 = {
+						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
+					};
+					BEE74FFC1DE367FB00A6DD44 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up-N-Down" */;
+			buildConfigurationList = BEE74FCF1DE366FE00A6DD44 /* Build configuration list for PBXProject "Up-N-Down" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -432,39 +388,37 @@
 				en,
 				Base,
 			);
-			mainGroup = BE3A9FC41DB3DCDD0009D265;
-			productRefGroup = BE3A9FCE1DB3DCDD0009D265 /* Products */;
+			mainGroup = BEE74FCB1DE366FE00A6DD44;
+			productRefGroup = BEE74FD51DE366FE00A6DD44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE3A9FCC1DB3DCDD0009D265 /* Up-N-Down */,
-				BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */,
-				BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */,
+				BEE74FD31DE366FE00A6DD44 /* Up-N-Down */,
+				BEE74FE91DE3678200A6DD44 /* Up-N-Down Finder Sync Extension */,
+				BEE74FFC1DE367FB00A6DD44 /* Up-N-Down Git Service */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BE3A9FCB1DB3DCDD0009D265 /* Resources */ = {
+		BEE74FD21DE366FE00A6DD44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3A9FD51DB3DCDD0009D265 /* Assets.xcassets in Resources */,
-				BE3A9FD81DB3DCDD0009D265 /* Main.storyboard in Resources */,
-				BEED61A41DBE964300861DB8 /* OnBoarding.storyboard in Resources */,
-				BEE9E6401DC1301400D3CA2B /* Regular.storyboard in Resources */,
+				BEE74FDC1DE366FE00A6DD44 /* Assets.xcassets in Resources */,
+				BEE74FDF1DE366FE00A6DD44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE3A9FF31DB3DD5A0009D265 /* Resources */ = {
+		BEE74FE81DE3678200A6DD44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3AA0041DB3EA530009D265 /* Assets.xcassets in Resources */,
+				BEE750391DE37C7600A6DD44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BED54AAA1DC8FD7500FE7B98 /* Resources */ = {
+		BEE74FFB1DE367FB00A6DD44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,21 +428,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BE3AA0091DB3F3FC0009D265 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/ObjectiveGit.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		BEC9B34E1DC90AAC008BDB89 /* ShellScript */ = {
+		BEE7502C1DE3729500A6DD44 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,93 +445,78 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE3A9FC91DB3DCDD0009D265 /* Sources */ = {
+		BEE74FD01DE366FE00A6DD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE9E63D1DC12A2E00D3CA2B /* NSColor+Theme.swift in Sources */,
-				BE3AA01B1DB402DE0009D265 /* TransparentWindow.swift in Sources */,
-				BED54AC21DC8FE9900FE7B98 /* GitServiceProtocol.swift in Sources */,
-				BE3A9FD31DB3DCDD0009D265 /* RegularViewController.swift in Sources */,
-				BE3A9FD11DB3DCDD0009D265 /* AppDelegate.swift in Sources */,
-				BEED61A11DBE962500861DB8 /* OnBoardingViewController.swift in Sources */,
+				BEE74FDA1DE366FE00A6DD44 /* ViewController.swift in Sources */,
+				BEE74FD81DE366FE00A6DD44 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE3A9FF11DB3DD5A0009D265 /* Sources */ = {
+		BEE74FE61DE3678200A6DD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECB06E61DC62F8400753CF3 /* NSMenuItem.swift in Sources */,
-				BE3AA0131DB3F9820009D265 /* URL.swift in Sources */,
-				BE3AA0151DB3FB690009D265 /* Git+Status.swift in Sources */,
-				BE3A9FFA1DB3DD5A0009D265 /* FinderSync.swift in Sources */,
-				BE3AA0061DB3EC540009D265 /* Badge.swift in Sources */,
-				BE3AA0081DB3EC7F0009D265 /* FIFinderSyncController+Badge.swift in Sources */,
-				BEC9B34F1DC90D04008BDB89 /* GitService.swift in Sources */,
-				BED54AC31DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
-				BE3AA0171DB3FBE20009D265 /* GTRepository+URL.swift in Sources */,
-				BE3029D61DCE48F400FA4A93 /* ErrorHandler.swift in Sources */,
-				BE3029D31DCE438300FA4A93 /* NSAlert.swift in Sources */,
-				BE3AA0101DB3F8630009D265 /* Git.swift in Sources */,
+				BEE750361DE37B8600A6DD44 /* FIFinderSyncControllerExtensions.swift in Sources */,
+				BEE750411DE3874E00A6DD44 /* FinderSync+Observation.swift in Sources */,
+				BEE750341DE37B7900A6DD44 /* Badge.swift in Sources */,
+				BE519EED1DE4C35C00B9C88E /* NSAlertExtensions.swift in Sources */,
+				BEE74FEF1DE3678200A6DD44 /* FinderSync.swift in Sources */,
+				BED0CEE81DF5E1B100484C63 /* FinderSync+ContextualMenu.swift in Sources */,
+				BEE7503B1DE37D6300A6DD44 /* NSMenuItemExtensions.swift in Sources */,
+				BEE7503F1DE386ED00A6DD44 /* FinderSync+Toolbar.swift in Sources */,
+				BE519EF31DE4CD2B00B9C88E /* FinderSync+Git.swift in Sources */,
+				BEE750231DE36A5E00A6DD44 /* GitClient.swift in Sources */,
+				BE27AF541DE6FB1A001A76BB /* FinderSync+Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BED54AA81DC8FD7500FE7B98 /* Sources */ = {
+		BEE74FF91DE367FB00A6DD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE089E2E1DC9016A0019A090 /* main.swift in Sources */,
-				BED54AC41DC8FF6B00FE7B98 /* GitServiceProtocol.swift in Sources */,
-				BEC9B3531DC9204F008BDB89 /* GitStatus.swift in Sources */,
-				BE089E2F1DC9016F0019A090 /* GitService.swift in Sources */,
+				BE519EFB1DE4ECFA00B9C88E /* RepositoryHandler.swift in Sources */,
+				BEE750181DE3692800A6DD44 /* GitService.swift in Sources */,
+				BED0CEEA1DF5E6CC00484C63 /* IndexHandler.swift in Sources */,
+				BE519EF51DE4D07800B9C88E /* StatusHandler.swift in Sources */,
+				BEE750491DE387FD00A6DD44 /* GitStatusExtensions.swift in Sources */,
+				BE519EF01DE4C82800B9C88E /* URLExtensions.swift in Sources */,
+				BEE750191DE3692800A6DD44 /* GitServiceDelegate.swift in Sources */,
+				BE519EF91DE4DA3500B9C88E /* ObjectiveGitExtensions.swift in Sources */,
+				BEE750151DE3691C00A6DD44 /* main.swift in Sources */,
+				BED0CEEC1DF5EE9900484C63 /* CommitHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BE3A9FFD1DB3DD5A0009D265 /* PBXTargetDependency */ = {
+		BEE74FF21DE3678200A6DD44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BE3A9FF41DB3DD5A0009D265 /* Up-N-Down Finder Sync Extension */;
-			targetProxy = BE3A9FFC1DB3DD5A0009D265 /* PBXContainerItemProxy */;
+			target = BEE74FE91DE3678200A6DD44 /* Up-N-Down Finder Sync Extension */;
+			targetProxy = BEE74FF11DE3678200A6DD44 /* PBXContainerItemProxy */;
 		};
-		BED54AB61DC8FD7500FE7B98 /* PBXTargetDependency */ = {
+		BEE750071DE367FB00A6DD44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BED54AAB1DC8FD7500FE7B98 /* Up-N-Down Git Service */;
-			targetProxy = BED54AB51DC8FD7500FE7B98 /* PBXContainerItemProxy */;
+			target = BEE74FFC1DE367FB00A6DD44 /* Up-N-Down Git Service */;
+			targetProxy = BEE750061DE367FB00A6DD44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE3A9FD61DB3DCDD0009D265 /* Main.storyboard */ = {
+		BEE74FDD1DE366FE00A6DD44 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE3A9FD71DB3DCDD0009D265 /* Base */,
+				BEE74FDE1DE366FE00A6DD44 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BEE9E63E1DC1301400D3CA2B /* Regular.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEE9E63F1DC1301400D3CA2B /* Base */,
-			);
-			name = Regular.storyboard;
-			sourceTree = "<group>";
-		};
-		BEED61A21DBE964300861DB8 /* OnBoarding.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEED61A31DBE964300861DB8 /* Base */,
-			);
-			name = OnBoarding.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BE3A9FDA1DB3DCDD0009D265 /* Debug */ = {
+		BEE74FE11DE366FE00A6DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -609,12 +534,13 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -640,7 +566,7 @@
 			};
 			name = Debug;
 		};
-		BE3A9FDB1DB3DCDD0009D265 /* Release */ = {
+		BEE74FE21DE366FE00A6DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -658,12 +584,13 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -681,126 +608,104 @@
 			};
 			name = Release;
 		};
-		BE3A9FDD1DB3DCDD0009D265 /* Debug */ = {
+		BEE74FE41DE366FE00A6DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "App/Up-N-Down.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		BE3A9FDE1DB3DCDD0009D265 /* Release */ = {
+		BEE74FE51DE366FE00A6DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "App/Up-N-Down.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		BE3AA0001DB3DD5A0009D265 /* Debug */ = {
+		BEE74FF51DE3678200A6DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder-Sync-Extension.entitlements";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder_Sync_Extension.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
+				INFOPLIST_FILE = "Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-finder-sync-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down.Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		BE3AA0011DB3DD5A0009D265 /* Release */ = {
+		BEE74FF61DE3678200A6DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder-Sync-Extension.entitlements";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Finder Sync Extension/Finder_Sync_Extension.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Finder Sync Extension/Info.plist";
+				INFOPLIST_FILE = "Finder Sync Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-finder-sync-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down.Finder-Sync-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		BED54AB81DC8FD7500FE7B98 /* Debug */ = {
+		BEE7500A1DE367FB00A6DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Git Service/Git-Service.entitlements";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Git Service/Info.plist";
+				INFOPLIST_FILE = "Git Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-git-service";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down.Git-Service";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		BED54AB91DC8FD7500FE7B98 /* Release */ = {
+		BEE7500B1DE367FB00A6DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Git Service/Git-Service.entitlements";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4K9RW3368R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Git Service/Info.plist";
+				INFOPLIST_FILE = "Git Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.up-n-down-git-service";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.up-n-down.Up-N-Down.Git-Service";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/GitServiceBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -808,43 +713,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE3A9FC81DB3DCDD0009D265 /* Build configuration list for PBXProject "Up-N-Down" */ = {
+		BEE74FCF1DE366FE00A6DD44 /* Build configuration list for PBXProject "Up-N-Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE3A9FDA1DB3DCDD0009D265 /* Debug */,
-				BE3A9FDB1DB3DCDD0009D265 /* Release */,
+				BEE74FE11DE366FE00A6DD44 /* Debug */,
+				BEE74FE21DE366FE00A6DD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE3A9FDC1DB3DCDD0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down" */ = {
+		BEE74FE31DE366FE00A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE3A9FDD1DB3DCDD0009D265 /* Debug */,
-				BE3A9FDE1DB3DCDD0009D265 /* Release */,
+				BEE74FE41DE366FE00A6DD44 /* Debug */,
+				BEE74FE51DE366FE00A6DD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE3A9FFF1DB3DD5A0009D265 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */ = {
+		BEE74FF41DE3678200A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down Finder Sync Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE3AA0001DB3DD5A0009D265 /* Debug */,
-				BE3AA0011DB3DD5A0009D265 /* Release */,
+				BEE74FF51DE3678200A6DD44 /* Debug */,
+				BEE74FF61DE3678200A6DD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BED54ABA1DC8FD7500FE7B98 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */ = {
+		BEE750091DE367FB00A6DD44 /* Build configuration list for PBXNativeTarget "Up-N-Down Git Service" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BED54AB81DC8FD7500FE7B98 /* Debug */,
-				BED54AB91DC8FD7500FE7B98 /* Release */,
+				BEE7500A1DE367FB00A6DD44 /* Debug */,
+				BEE7500B1DE367FB00A6DD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BE3A9FC51DB3DCDD0009D265 /* Project object */;
+	rootObject = BEE74FCC1DE366FE00A6DD44 /* Project object */;
 }

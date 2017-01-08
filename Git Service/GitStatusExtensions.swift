@@ -1,29 +1,13 @@
 //
-//  GitStatus.swift
+//  GitStatusExtensions.swift
 //  Up-N-Down
 //
-//  Created by Thomas Paul Mann on 01/11/2016.
-//  Copyright © 2016 Thomas Paul Mann. All rights reserved.
+//  Created by Thomas Paul Mann on 22/11/2016.
+//  Copyright © 2016 Up-N-Down. All rights reserved.
 //
 
+import Foundation
 import ObjectiveGit
-
-enum GitStatus {
-
-    case unmodified
-    case ignored
-
-    case addedInIndex
-    case deletedInIndex
-    case modifiedInIndex
-    case renamedInIndex
-
-    case addedInWorktree
-    case deletedInWorktree
-    case modifiedInWorktree
-    case renamedInWorktree
-    
-}
 
 // MARK: - File Status Flags
 
@@ -54,4 +38,3 @@ extension GitStatus {
     }
 
 }
-

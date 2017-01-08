@@ -1,9 +1,9 @@
 //
-//  URL.swift
-//  Up N Down
+//  URLExtensions.swift
+//  Up-N-Down
 //
-//  Created by Thomas Paul Mann on 16/10/2016.
-//  Copyright © 2016 Thomas Paul Mann. All rights reserved.
+//  Created by Thomas Paul Mann on 22/11/2016.
+//  Copyright © 2016 Up-N-Down. All rights reserved.
 //
 
 import Foundation

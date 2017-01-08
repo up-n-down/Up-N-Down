@@ -12,21 +12,30 @@ enum Badge: String {
 
     case ignored = "Ignored"
 
-    case addedInIndex = "Added in Index"
-    case deletedInIndex = "Deleted in Index"
+    case addedInIndex    = "Added in Index"
+    case deletedInIndex  = "Deleted in Index"
     case modifiedInIndex = "Modified in Index"
-    case renamedInIndex = "Renamed in Index"
+    case renamedInIndex  = "Renamed in Index"
 
-    case addedInWorktree = "Added in Worktree"
-    case deletedInWorktree = "Deleted in Worktree"
+    case addedInWorktree    = "Added in Worktree"
+    case deletedInWorktree  = "Deleted in Worktree"
     case modifiedInWorktree = "Modified in Worktree"
-    case renamedInWorktree = "Renamed in Worktree"
+    case renamedInWorktree  = "Renamed in Worktree"
 
 }
 
 // MARK: - Convenience properties
 
 extension Badge {
+
+    /// Returns array with all available badges.
+    static var all: [Badge] {
+        return [
+            .ignored,
+            .addedInIndex,    .deletedInIndex,    .modifiedInIndex,    .renamedInIndex,
+            .addedInWorktree, .deletedInWorktree, .modifiedInWorktree, .renamedInWorktree
+        ]
+    }
 
     /// Returns the identifier of the badge.
     var identifier: String {

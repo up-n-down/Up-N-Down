@@ -10,6 +10,7 @@ import Cocoa
 
 extension NSMenuItem {
 
+    /// Convenience initialiser for menu item.
     public convenience init(title: String, action: Selector? = nil) {
         self.init(title: title, action: action ?? nil, keyEquivalent: "")
     }
